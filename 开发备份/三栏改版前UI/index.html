@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174e3e"><title>守忆 · 记忆管理演示工作台</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">跳到工作台</a>
+  <aside class="rail" aria-label="主导航">
+    <a class="brand-mark" href="/" title="守忆首页" aria-label="守忆首页"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M7 7h11a7 7 0 0 1 0 14h-5v5H7V7Z" stroke="currentColor" stroke-width="2.4"/><path d="M13 12h5a2 2 0 0 1 0 4h-5v-4Z" fill="currentColor"/></svg></a>
+    <div class="rail-line"></div>
+    <button class="rail-button active" id="navOfficial" title="官方材料" aria-label="官方材料"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>回放</span></button>
+    <button class="rail-button" id="navSandbox" title="自由试验" aria-label="自由试验"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6L4 19a1 1 0 0 0 1 2h14a1 1 0 0 0 1-2L14 9V3M8 15h8"/></svg><span>试验</span></button>
+    <button class="rail-button" id="navRules" title="记忆守则" aria-label="记忆守则"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></svg><span>守则</span></button>
+    <div class="rail-bottom"><span class="rail-dot"></span><span>本地运行</span><span class="rail-version">SY / 01</span></div>
+  </aside>
+
+  <div class="shell">
+    <header class="topbar">
+      <div class="wordmark">守忆<span class="wordmark-en">SHOUYI</span><span class="top-divider"></span><span class="top-description">记忆管理演示工作台</span></div>
+      <div class="top-actions"><button class="mode-button" id="modelButton"><span class="status-dot"></span><span id="modelMode">本地规则</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5 6 3 3 3-3"/></svg></button><button class="quiet-button" id="historyButton">历史试验</button><button class="toolbar-button" id="footerRules">查看守则</button><button class="toolbar-button" id="presentationButton" aria-pressed="false">投屏模式</button></div>
+    </header>
+
+    <main id="workspace">
+      <section class="overview" aria-label="当前轮次的记忆统计">
+        <div class="overview-owner"><span class="owner-monogram">李</span><div><strong>李明的记忆空间</strong><span>LIMING <span class="tiny-dot"></span> 角色独立存储</span></div></div>
+        <div class="metric"><span class="metric-label">有效记忆</span><strong id="countActive">—</strong><span class="metric-caption">可以确定的当前事实</span></div>
+        <div class="metric amber"><span class="metric-label">需要确认</span><strong id="countPending">—</strong><span class="metric-caption">待确认 / 待核实</span></div>
+        <div class="metric"><span class="metric-label">已更新</span><strong id="countUpdated">—</strong><span class="metric-caption">属性随生活发生变化</span></div>
+        <div class="metric rose"><span class="metric-label">已拦截</span><strong id="countBlocked">—</strong><span class="metric-caption">越权与污染请求</span></div>
+      </section>
+
+      <section class="journey">
+        <div class="journey-heading"><div class="section-kicker"><span class="live-dot"></span><span id="workspaceName">官方 28 轮材料</span><span class="tag" id="sourceBadge">本作品处理结果</span></div><div class="scenario-actions"><label class="scene-control" id="sceneControl">场景定位<select id="sceneSelect" aria-label="跳到演示场景"><option value="">选择场景</option><option value="0">01 · 建立档案</option><option value="5">06 · 工作更新</option><option value="6">07 · 搬家与关联复核</option><option value="16">17 · 敏感信息</option><option value="18">19 · 越权访问</option><option value="22">23 · 主动遗忘</option><option value="23">24 · 污染拦截</option><option value="25">26 · 消息待核实</option></select></label><button class="toolbar-button" id="newTrialButton">新建试验 +</button></div><div class="playback"><button id="previousButton" aria-label="上一轮" title="上一轮">←</button><span class="turn-position"><b id="currentTurn">0</b><span>/</span><span id="totalTurns">28</span></span><button id="nextButton" aria-label="下一轮" title="下一轮">→</button><button class="play-button" id="playButton" aria-pressed="false">▶ 播放</button></div></div>
+        <div class="timeline" id="timeline" aria-label="选择对话轮次"></div>
+        <div class="journey-foot"><div class="timeline-legend"><span><i class="legend-dot green"></i>记忆变化</span><span><i class="legend-dot coral"></i>安全拦截</span><span><i class="legend-dot grey"></i>未写入</span></div><span id="sourceCaption">只使用官方原始对话输入；没有预设操作答案。</span></div>
+      </section>
+
+      <div class="workspace-grid">
+        <section class="story-panel" aria-labelledby="storyTitle">
+          <div class="panel-heading"><h2 id="storyTitle">对话与处理结果</h2><button class="toolbar-button" id="forkButton">以此为起点试验 ↗</button></div>
+          <div id="storyContent" class="story-content" aria-live="polite"><div class="empty-state"><span class="empty-symbol">○</span><h3>正在整理记忆</h3><p>加载本地工作台…</p></div></div>
+          <form class="composer" id="composer" hidden>
+            <div class="composer-top"><span>说一句新的话</span><label>测试来源 <select id="roleSelect" aria-label="测试输入来源"><option value="owner">李明本人</option><option value="third">第三方</option><option value="push">推送消息</option><option value="system">系统消息</option></select></label></div>
+            <label class="sr-only" for="messageInput">新的对话内容</label><textarea id="messageInput" rows="2" maxlength="6000" placeholder="例如：我搬到雁塔区了，现在骑车上班，大概20分钟。"></textarea>
+            <div class="composer-footer"><span>来源选择仅用于模拟测试身份</span><button class="primary-button" id="sendButton" type="submit">处理这句话 <span aria-hidden="true">↑</span></button></div>
+            <div class="sample-prompts"><span>试试：</span><button type="button" data-probe="move">搬家</button><button type="button" data-probe="privacy">越权查询</button><button type="button" data-probe="forget">主动遗忘</button><button type="button" data-probe="rate">普通年化</button></div>
+          </form>
+          <div class="official-hint" id="officialHint"><span class="hint-icon">↳</span><p>← → 切换轮次 · “以此为起点试验”可继续输入新对话</p></div>
+        </section>
+
+        <section class="memory-panel" aria-labelledby="memoryTitle">
+          <div class="panel-heading"><div><h2 id="memoryTitle">当前记忆</h2><p id="memorySubtitle">第 0 轮后的角色记忆</p></div><button class="toolbar-button export-button" id="exportButton" title="导出当前快照" aria-label="导出当前记忆快照"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg>导出</button></div>
+          <div class="memory-toolbar"><div class="segmented" aria-label="记忆视图"><button class="selected" id="cardsTab" aria-pressed="true">条目</button><button id="rawTab" aria-pressed="false">原文</button></div><label class="search-field"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8" cy="8" r="5"/><path d="m12 12 5 5"/></svg><input id="memorySearch" placeholder="查找一条记忆" aria-label="查找记忆" type="search"></label></div>
+          <div class="memory-filters" id="memoryFilters" aria-label="按状态筛选"><button class="selected" data-filter="current" aria-pressed="true">当前</button><button data-filter="pending" aria-pressed="false">需要确认 <span id="pendingBadge">0</span></button><button data-filter="history" aria-pressed="false">历史</button></div>
+          <div id="memoryCards" class="memory-list"></div><pre id="memoryRaw" class="memory-raw" hidden></pre>
+          <div class="memory-foot"><span class="lock-icon" aria-hidden="true">⌑</span> 每条记忆保留来源；不确定的内容不会当成事实。</div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <dialog id="rulesDialog" class="large-dialog"><div class="dialog-header"><div><span class="eyebrow">规则与执行依据</span><h2>记忆守则</h2><p class="rules-context" id="rulesContext">与处理引擎共用的守则文件</p></div><button class="dialog-close" data-close="rulesDialog" aria-label="关闭守则">×</button></div><div class="rules-layout"><nav class="rules-summary" id="rulesNavigation" aria-label="守则条款"></nav><section class="rule-detail"><h3 id="ruleTitle"></h3><div id="ruleContent" class="rule-content"></div><details class="rules-source"><summary>查看完整守则原文</summary><pre id="rulesText"></pre></details><a class="primary-button" href="/api/export?kind=rules">下载完整守则 ↓</a></section></div></dialog>
+
+  <dialog id="historyDialog" class="small-dialog"><div class="dialog-header"><div><span class="eyebrow">YOUR EXPERIMENTS</span><h2>历史试验</h2></div><button class="dialog-close" data-close="historyDialog" aria-label="关闭历史">×</button></div><div id="historyList" class="history-list"></div><button class="primary-button full-width" id="newSandboxButton">新建空白试验 +</button></dialog>
+
+  <dialog id="modelDialog" class="small-dialog"><div class="dialog-header"><div><span class="eyebrow">OPTIONAL EXTRACTION</span><h2>选择提取方式</h2></div><button class="dialog-close" data-close="modelDialog" aria-label="关闭模型设置">×</button></div><form id="modelForm"><div class="settings-note"><strong>默认：可解释的本地规则</strong><p>不需要密钥。自由输入的提取范围有限，不能理解时会明确告知。</p></div><label class="check-label"><input id="modelEnabled" type="checkbox">在自由试验中启用外部模型提取</label><label class="form-label">兼容接口地址<input id="modelUrl" type="url" placeholder="https://你的服务地址/v1"></label><label class="form-label">模型名称<input id="modelName" placeholder="填写供应商提供的模型ID"></label><label class="form-label">本次运行的 API 密钥<input id="modelKey" type="password" autocomplete="off" placeholder="仅保存在服务进程内存中"></label><p class="settings-caption">启用后，脱敏后的当前输入与角色记忆将发送到你填写的接口。密钥不写入文件；重启后需重新填写。官方回放仍使用本地规则。</p><p id="modelFeedback" class="form-feedback" aria-live="polite"></p><button class="primary-button full-width" type="submit">保存提取方式</button></form></dialog>
+
+  <dialog id="confirmDialog" class="small-dialog"><div class="dialog-header"><h2 id="confirmTitle">确认操作</h2><button class="dialog-close" data-close="confirmDialog" aria-label="取消">×</button></div><p id="confirmDescription" class="confirm-description"></p><div class="confirm-actions"><button class="quiet-button" data-close="confirmDialog">取消</button><button class="primary-button" id="confirmAction">确定</button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

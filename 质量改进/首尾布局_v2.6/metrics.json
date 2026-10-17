@@ -1,0 +1,91 @@
+{
+  "v2.5": {
+    "run_id": "1cca250282f544b4a00cbd94627114c7",
+    "status": "completed",
+    "completed": 28,
+    "started_at": "2026-10-16T02:33:08.334754+00:00",
+    "finished_at": "2026-10-16T02:34:36.840397+00:00",
+    "attempts": 28,
+    "api_requests": 29,
+    "unique_request_ids": 29,
+    "failures": 0,
+    "format_repair_turns": [
+      15
+    ],
+    "statuses": {
+      "ACTIVE": 24,
+      "SUPERSEDED": 12,
+      "REVIEW": 4,
+      "DELETED": 1,
+      "UNVERIFIED": 1
+    },
+    "live_records": 29,
+    "decisions": {
+      "change": 18,
+      "ignore": 6,
+      "block": 4
+    },
+    "changes": {
+      "新增": 31,
+      "更新": 11,
+      "待确认": 7,
+      "失效": 1,
+      "遗忘": 1
+    },
+    "usage": {
+      "prompt_tokens": 300508,
+      "completion_tokens": 11620,
+      "total_tokens": 312128
+    },
+    "usage_missing_calls": 0,
+    "message_role_sequences": [
+      []
+    ],
+    "nonowner_changes": 0
+  },
+  "v2.6": {
+    "run_id": "9912e312fb8a4382981f0cf9ccbfb194",
+    "status": "completed",
+    "completed": 28,
+    "started_at": "2026-10-16T03:07:01.122790+00:00",
+    "finished_at": "2026-10-16T03:08:25.301364+00:00",
+    "attempts": 28,
+    "api_requests": 28,
+    "unique_request_ids": 28,
+    "failures": 0,
+    "format_repair_turns": [],
+    "statuses": {
+      "ACTIVE": 21,
+      "SUPERSEDED": 8,
+      "REVIEW": 5,
+      "DELETED": 1,
+      "UNVERIFIED": 1
+    },
+    "live_records": 27,
+    "decisions": {
+      "change": 19,
+      "ignore": 5,
+      "block": 4
+    },
+    "changes": {
+      "新增": 28,
+      "更新": 8,
+      "待确认": 7,
+      "遗忘": 1
+    },
+    "usage": {
+      "prompt_tokens": 282308,
+      "completion_tokens": 10078,
+      "total_tokens": 292386
+    },
+    "usage_missing_calls": 0,
+    "message_role_sequences": [
+      [
+        "system",
+        "user",
+        "system"
+      ]
+    ],
+    "nonowner_changes": 0
+  }
+}

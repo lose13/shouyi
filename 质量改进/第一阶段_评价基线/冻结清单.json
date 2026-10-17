@@ -1,0 +1,90 @@
+{
+  "version": "eval-v1",
+  "freeze_status": "frozen",
+  "frozen_at": "2026-10-16T00:27:41+08:00",
+  "timezone": "Asia/Shanghai",
+  "review": "静态审查说明.md",
+  "execution_status": "not_run",
+  "model_calls": 0,
+  "effect_results": 0,
+  "case_counts": {
+    "development": 20,
+    "holdout": 10,
+    "total": 30
+  },
+  "family_counts": {
+    "development": 18,
+    "holdout": 10,
+    "note": "家族是设计分组，不构成统计独立性保证；开发集含两对同义变体"
+  },
+  "turn_counts": {
+    "development": 58,
+    "holdout": 44,
+    "total": 102
+  },
+  "files": [
+    {
+      "path": "错误清单.md",
+      "sha256": "86eab2ddec3f3a01a736e43df27bacf1991d4a5fee5d63989d19e4aaeeb3394f",
+      "bytes": 7248
+    },
+    {
+      "path": "开发场景.json",
+      "sha256": "f81d2697dfaec43cdc941a7b550003facfa9472961859cbb516a132543e79e0c",
+      "bytes": 45414
+    },
+    {
+      "path": "开发场景说明.md",
+      "sha256": "9aa216351e7f618b163f56bbc9ea59ef7d277b5dc7e29a76e3cd1d3604027542",
+      "bytes": 23717
+    },
+    {
+      "path": "留出场景.json",
+      "sha256": "8130a50d3df7d13b91ce7029536493595454c8c5460207da19eb926e001918ee",
+      "bytes": 31245
+    },
+    {
+      "path": "留出使用说明.md",
+      "sha256": "32b229d9e4001adf094c5f095871481bdd2402f0abd43e935565a670d3877738",
+      "bytes": 7229
+    },
+    {
+      "path": "README.md",
+      "sha256": "9fb8e0b40d826481f703c28976be232c108c3f7982b59d696bb69d5a7f2ad156",
+      "bytes": 7055
+    },
+    {
+      "path": "静态审查说明.md",
+      "sha256": "c2a4ea02b798c19163e0dffc93072c62de8f600b146f1ae2ba59d3b4b39f397d",
+      "bytes": 3374
+    }
+  ],
+  "baseline": {
+    "application_version": "v2.2.1",
+    "files": [
+      {
+        "path": "D:/ai创新大赛/专业赛道/gpt/守忆/memory-rules.md",
+        "sha256": "161b427885eb141700db019050780b06a0709c506d2515ae54260f6b95e3169e"
+      },
+      {
+        "path": "D:/ai创新大赛/专业赛道/gpt/守忆/app/model.py",
+        "sha256": "6a5f287168b63454e2fe172479b0c2c6dc986be1e9d2eaff82ecc21ebd9c9eba"
+      },
+      {
+        "path": "D:/ai创新大赛/专业赛道/gpt/守忆/app/engine.py",
+        "sha256": "9a8850f26bb2f2ca4939ea014b44ed5682ea65c52e9f68cc7b17ef3067a0fb0f"
+      }
+    ],
+    "official_run_pointer": {
+      "path": "D:/ai创新大赛/专业赛道/gpt/守忆/app/data/official-llm-run.json",
+      "run_id": "11b66796f5a24ae1913c6c5f1027843c",
+      "usage": "既有官方28轮运行，仅作版本与错误证据指针，不是本评价集结果"
+    }
+  },
+  "notes": [
+    "本清单不包含自身哈希，避免循环；文件哈希记录原始字节。",
+    "未执行场景，无成绩、通过率或效果结论。",
+    "冻结后如改题或预期须另起版本并保留修订理由。",
+    "未复制密钥、私密工作区状态或完整官方运行内容。"
+  ]
+}

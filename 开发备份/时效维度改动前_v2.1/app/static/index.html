@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1220"><title>守忆 · 对话与记忆工作台</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">跳到工作台</a>
+  <aside class="rail" aria-label="主导航">
+    <a class="brand-mark" href="/" aria-label="守忆工作台"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></svg><span>守忆<small>记忆管理工作台</small></span></a>
+    <div class="nav-heading">工作区</div>
+    <button class="rail-button active" id="navOfficial"><span class="nav-icon">▤</span><span>官方实跑<small>LLM逐轮决策与回放</small></span></button>
+    <button class="rail-button" id="navSandbox"><span class="nav-icon">＋</span><span>自由试验<small>输入新对话验证效果</small></span></button>
+    <button class="rail-button" id="historyButton"><span class="nav-icon">◷</span><span>历史试验<small>打开保存的工作区</small></span></button>
+    <div class="nav-heading">规则与设置</div>
+    <button class="rail-button" id="navRules"><span class="nav-icon">◇</span><span>记忆守则<small>查看 9 条处理规则</small></span></button>
+    <button class="rail-button" id="modelButton"><span class="nav-icon">⚙</span><span>模型设置<small id="modelMode">尚未配置密钥</small></span></button>
+    <div class="rail-bottom"><span class="status-dot"></span>本地运行 · 李明的独立空间</div>
+  </aside>
+  <div class="shell">
+    <header class="topbar">
+      <div class="workspace-identity"><h1 id="workspaceName">官方 28 轮材料</h1><span class="tag" id="sourceBadge">本作品处理结果</span></div>
+      <div class="top-actions"><button class="toolbar-button" id="themeButton">浅色模式</button><button class="toolbar-button" id="footerRules">查看守则</button><button class="toolbar-button" id="presentationButton" aria-pressed="false">投屏模式</button><button class="primary-button" id="newTrialButton">新建试验 +</button></div>
+    </header>
+    <main id="workspace">
+      <section class="command-strip" aria-label="演示控制与统计">
+        <div class="playback"><button id="previousButton" aria-label="上一轮" title="上一轮">←</button><span class="turn-position">第 <b id="currentTurn">0</b> / <span id="totalTurns">28</span> 轮</span><button id="nextButton" aria-label="下一轮" title="下一轮">→</button><button class="play-button" id="playButton" aria-pressed="false">▶ 播放</button></div>
+        <div class="metric"><span>有效记忆</span><strong id="countActive">—</strong></div><div class="metric amber"><span>待确认与核实</span><strong id="countPending">—</strong></div><div class="metric violet"><span>累计更新</span><strong id="countUpdated">—</strong></div><div class="metric rose"><span>累计拦截</span><strong id="countBlocked">—</strong></div>
+      </section>
+      <section class="journey" aria-label="轮次与场景选择">
+        <div class="scene-row"><label class="scene-control" id="sceneControl">场景定位<select id="sceneSelect" aria-label="跳到演示场景"><option value="">选择场景</option><option value="0">01 · 建立档案</option><option value="5">06 · 工作更新</option><option value="6">07 · 搬家与关联复核</option><option value="16">17 · 敏感信息</option><option value="18">19 · 越权访问</option><option value="22">23 · 主动遗忘</option><option value="23">24 · 污染拦截</option><option value="25">26 · 消息待核实</option></select></label><span id="sourceCaption">官方输入 · 本作品实际处理结果</span><button class="toolbar-button compact-list-button" id="turnListButton">查看对话列表</button></div>
+        <div class="timeline" id="timeline" aria-label="选择对话轮次"></div>
+      </section>
+      <section class="model-run-banner" id="officialRunPanel" aria-label="LLM真实运行进度"><div><strong id="runStatus">尚未运行官方材料</strong><p id="runDetail">每轮由大模型阅读守则并决策，完成28轮后生成最终记忆。</p></div><button class="primary-button" id="officialRunButton">调用LLM运行28轮</button></section>
+      <div class="workspace-grid">
+        <section class="conversation-panel panel" aria-labelledby="conversationTitle"><div class="panel-heading"><div><h2 id="conversationTitle"><span class="section-number">1</span> 对话列表</h2><p>选择一轮，查看输入和处理结果</p></div><span class="small-badge" id="conversationCount">28轮</span></div><div id="conversationList" class="conversation-list"></div></section>
+        <section class="story-panel panel" aria-labelledby="storyTitle">
+          <div class="panel-heading"><div><h2 id="storyTitle"><span class="section-number">2</span> 对话与处理</h2><p>本轮说了什么，记忆发生了什么变化</p></div><button class="toolbar-button" id="forkButton">从本轮试验 ↗</button></div>
+          <div id="storyContent" class="story-content" aria-live="polite"><div class="empty-state"><h3>正在加载工作台</h3><p>读取对话与角色记忆…</p></div></div>
+          <form class="composer" id="composer">
+            <div class="composer-top"><strong>输入新对话</strong><label>模拟来源<select id="roleSelect" aria-label="测试输入来源"><option value="owner">李明本人</option><option value="third">第三方</option><option value="push">推送消息</option><option value="system">系统消息</option></select></label></div>
+            <div class="official-hint" id="officialHint">当前为官方回放，发送后将自动建立独立试验。</div>
+            <div class="input-row"><label class="sr-only" for="messageInput">新的对话内容</label><textarea id="messageInput" rows="2" maxlength="6000" placeholder="输入工作变动、搬家或一条要删除的记忆…"></textarea><button class="primary-button" id="sendButton" type="submit">发送并处理 ↑</button></div>
+            <div class="sample-prompts"><span>快捷填入</span><button type="button" data-probe="move">搬家更新</button><button type="button" data-probe="privacy">越权查询</button><button type="button" data-probe="forget">主动遗忘</button><button type="button" data-probe="rate">普通年化</button><span class="keyboard-hint">Ctrl + Enter 发送</span></div>
+          </form>
+        </section>
+        <section class="memory-panel panel" aria-labelledby="memoryTitle">
+          <div class="panel-heading"><div><h2 id="memoryTitle"><span class="section-number">3</span> 当前记忆</h2><p id="memorySubtitle">所选轮次处理后的记忆快照</p></div><button class="toolbar-button" id="exportButton" aria-label="导出当前记忆快照">导出 ↓</button></div>
+          <div class="memory-toolbar"><div class="segmented" aria-label="记忆视图"><button class="selected" id="cardsTab" aria-pressed="true">卡片</button><button id="rawTab" aria-pressed="false">文件原文</button></div><label class="search-field"><span aria-hidden="true">⌕</span><input id="memorySearch" placeholder="搜索记忆" aria-label="查找记忆" type="search"></label></div>
+          <div class="memory-filters" id="memoryFilters" aria-label="按状态筛选"><button class="selected" data-filter="current" aria-pressed="true">当前条目</button><button data-filter="pending" aria-pressed="false">待确认 / 核实 <span id="pendingBadge">0</span></button><button data-filter="history" aria-pressed="false">失效与删除</button></div>
+          <div id="memoryCards" class="memory-list"></div><pre id="memoryRaw" class="memory-raw" hidden></pre>
+          <div class="memory-foot"><span class="legend-dot"></span>卡片显示状态与来源；“本轮”标记刚发生变化的条目。</div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <dialog id="turnsDialog" class="small-dialog"><div class="dialog-header"><h2>选择对话轮次</h2><button class="dialog-close" data-close="turnsDialog" aria-label="关闭对话列表">×</button></div><div id="turnDialogList" class="conversation-list"></div></dialog>
+  <dialog id="rulesDialog" class="large-dialog"><div class="dialog-header"><div><span class="eyebrow">规则与执行依据</span><h2>记忆守则</h2><p class="rules-context" id="rulesContext">与处理引擎共用的守则文件</p></div><button class="dialog-close" data-close="rulesDialog" aria-label="关闭守则">×</button></div><div class="rules-layout"><nav class="rules-summary" id="rulesNavigation" aria-label="守则条款"></nav><section class="rule-detail"><h3 id="ruleTitle"></h3><div id="ruleContent" class="rule-content"></div><details class="rules-source"><summary>查看完整守则原文</summary><pre id="rulesText"></pre></details><a class="primary-button" href="/api/export?kind=rules">下载完整守则 ↓</a></section></div></dialog>
+
+  <dialog id="historyDialog" class="small-dialog"><div class="dialog-header"><div><span class="eyebrow">已保存的工作区与分支</span><h2>历史试验</h2></div><button class="dialog-close" data-close="historyDialog" aria-label="关闭历史">×</button></div><div id="historyList" class="history-list"></div><button class="primary-button full-width" id="newSandboxButton">新建空白试验 +</button></dialog>
+
+  <dialog id="modelDialog" class="small-dialog"><div class="dialog-header"><div><span class="eyebrow">守则由AI阅读 记忆由AI决策</span><h2>配置大模型</h2></div><button class="dialog-close" data-close="modelDialog" aria-label="关闭模型设置">×</button></div><form id="modelForm"><div class="settings-note"><strong>官方28轮与自由试验均使用LLM</strong><p>模型阅读完整守则、当前记忆与必要的近期对话，决定提取、更新、失效、遗忘、拒绝与回应。没有本地替代模式。</p></div><label class="form-label">兼容接口地址<input id="modelUrl" type="url" required placeholder="https://api.deepseek.com"></label><label class="form-label">模型名称<input id="modelName" required placeholder="deepseek-flash"></label><label class="form-label">本次运行的 API 密钥<input id="modelKey" type="password" autocomplete="off" placeholder="仅保存在服务进程内存中"></label><p class="settings-caption">输入及当前角色记忆将发送至所填模型接口，可能产生模型调用费用。完整号码和密钥在发送前隐藏；第三方来源不携带主人的私密记忆。密钥仅在服务内存中保存。配置后请回到工作台选择运行。</p><p id="modelFeedback" class="form-feedback" aria-live="polite"></p><button class="primary-button full-width" type="submit">保存模型配置</button></form></dialog>
+
+  <dialog id="confirmDialog" class="small-dialog"><div class="dialog-header"><h2 id="confirmTitle">确认操作</h2><button class="dialog-close" data-close="confirmDialog" aria-label="取消">×</button></div><p id="confirmDescription" class="confirm-description"></p><div class="confirm-actions"><button class="quiet-button" data-close="confirmDialog">取消</button><button class="primary-button" id="confirmAction">确定</button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

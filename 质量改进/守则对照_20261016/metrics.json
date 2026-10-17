@@ -1,0 +1,166 @@
+{
+  "gemini_delivery_v14": {
+    "status": "completed",
+    "saved_turns": 28,
+    "api_requests": 30,
+    "failed_attempts": 1,
+    "logical_attempts": 29,
+    "unique_request_ids": 30,
+    "rules_characters": 8899,
+    "live_records": 22,
+    "live_statuses": {
+      "ACTIVE": 21,
+      "UNVERIFIED": 1
+    },
+    "live_categories": {
+      "FACT": 11,
+      "PREFERENCE": 5,
+      "GOAL": 2,
+      "HEALTH": 1,
+      "SENSITIVE": 2,
+      "EVENT": 1
+    },
+    "record_statuses": {
+      "ACTIVE": 21,
+      "SUPERSEDED": 11,
+      "DELETED": 1,
+      "UNVERIFIED": 1
+    },
+    "deleted_attributes": [
+      "job_opportunity_zhaogang"
+    ],
+    "decisions": {
+      "change": 19,
+      "ignore": 5,
+      "block": 4
+    },
+    "changes": {
+      "新增": 23,
+      "更新": 11,
+      "遗忘": 1
+    },
+    "format_repairs": 1,
+    "nonowner_changes": 0,
+    "usage": {
+      "prompt_tokens": 314238,
+      "completion_tokens": 15387,
+      "total_tokens": 329625
+    },
+    "mean_prompt_tokens": 10474.6,
+    "first_prompt_tokens": 6632,
+    "last_prompt_tokens": 6643,
+    "provider_seconds": 100.627,
+    "experiment_wall_seconds": 215.761,
+    "call_model_names": [
+      "deepseek-flash"
+    ]
+  },
+  "shouyi_v24": {
+    "status": "failed",
+    "saved_turns": 6,
+    "api_requests": 12,
+    "failed_attempts": 3,
+    "logical_attempts": 9,
+    "unique_request_ids": 12,
+    "rules_characters": 6557,
+    "live_records": 21,
+    "live_statuses": {
+      "ACTIVE": 19,
+      "REVIEW": 2
+    },
+    "live_categories": {
+      "FACT": 15,
+      "PREFERENCE": 3,
+      "HEALTH": 2,
+      "GOAL": 1
+    },
+    "record_statuses": {
+      "ACTIVE": 19,
+      "REVIEW": 2,
+      "SUPERSEDED": 2
+    },
+    "deleted_attributes": [],
+    "decisions": {
+      "change": 6
+    },
+    "changes": {
+      "新增": 21,
+      "更新": 2,
+      "待确认": 2
+    },
+    "format_repairs": 3,
+    "nonowner_changes": 0,
+    "usage": {
+      "prompt_tokens": 128165,
+      "completion_tokens": 15867,
+      "total_tokens": 144032
+    },
+    "mean_prompt_tokens": 10680.4,
+    "first_prompt_tokens": 5097,
+    "last_prompt_tokens": 13653,
+    "provider_seconds": 73.115,
+    "experiment_wall_seconds": null,
+    "call_model_names": [
+      "deepseek-flash"
+    ]
+  },
+  "historical_shouyi_v221": {
+    "status": "completed",
+    "saved_turns": 28,
+    "api_requests": 28,
+    "failed_attempts": 0,
+    "logical_attempts": 28,
+    "unique_request_ids": 28,
+    "rules_characters": null,
+    "live_records": 24,
+    "live_statuses": {
+      "ACTIVE": 18,
+      "REVIEW": 5,
+      "UNVERIFIED": 1
+    },
+    "live_categories": {
+      "FACT": 14,
+      "PREFERENCE": 3,
+      "HEALTH": 2,
+      "GOAL": 2,
+      "SENSITIVE": 2,
+      "EVENT": 1
+    },
+    "record_statuses": {
+      "ACTIVE": 18,
+      "SUPERSEDED": 12,
+      "REVIEW": 5,
+      "DELETED": 1,
+      "UNVERIFIED": 1
+    },
+    "deleted_attributes": [
+      "owner.job_opportunity_zhaogang"
+    ],
+    "decisions": {
+      "change": 19,
+      "ignore": 5,
+      "block": 4
+    },
+    "changes": {
+      "新增": 25,
+      "更新": 12,
+      "待确认": 11,
+      "遗忘": 1
+    },
+    "format_repairs": 0,
+    "nonowner_changes": 0,
+    "usage": {
+      "prompt_tokens": 249389,
+      "completion_tokens": 11226,
+      "total_tokens": 260615
+    },
+    "mean_prompt_tokens": 8906.8,
+    "first_prompt_tokens": 4297,
+    "last_prompt_tokens": 4308,
+    "provider_seconds": 91.842,
+    "experiment_wall_seconds": 92.492,
+    "call_model_names": [
+      "deepseek-flash"
+    ]
+  }
+}

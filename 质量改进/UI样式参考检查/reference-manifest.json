@@ -1,0 +1,12 @@
+{
+  "html_file": "D:\\ai创新大赛\\专业赛道\\gpt\\守忆_UI样式参考_可直接打开.html",
+  "bytes": 189885,
+  "network_request_code": false,
+  "api_key_included": false,
+  "saved_turns": 28,
+  "source_run_id": "9912e312fb8a4382981f0cf9ccbfb194",
+  "source": "existing static HTML/CSS/JS plus archived official simulation",
+  "browser_preview_verified": true,
+  "rules_dialog_verified": true,
+  "file_protocol_automation": "Not tested: browser automation allows HTTP/HTTPS only."
+}

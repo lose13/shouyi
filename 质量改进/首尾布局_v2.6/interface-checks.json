@@ -1,0 +1,7 @@
+{
+  "kind": "offline boundary and prompt placement checks; no API calls",
+  "tests": 11,
+  "failures": 0,
+  "errors": 0,
+  "passed": true
+}

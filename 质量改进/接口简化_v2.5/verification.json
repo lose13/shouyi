@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "completed_28": true,
+    "api_requests_29": true,
+    "unique_request_ids_29": true,
+    "export_matches_state": true,
+    "archived_export_matches": true,
+    "run_id_matches_manifest": true,
+    "rules_match": true,
+    "protocol_matches": true,
+    "frozen_source_matches": true,
+    "all_calls_use_current_protocol": true,
+    "no_nonowner_changes": true,
+    "no_persisted_candidates": true,
+    "no_full_identifiers_in_workspace": true,
+    "no_api_key_in_run": true
+  },
+  "run_id": "1cca250282f544b4a00cbd94627114c7",
+  "statuses": {
+    "ACTIVE": 24,
+    "SUPERSEDED": 12,
+    "REVIEW": 4,
+    "DELETED": 1,
+    "UNVERIFIED": 1
+  },
+  "usage": {
+    "prompt_tokens": 300508,
+    "completion_tokens": 11620,
+    "total_tokens": 312128
+  },
+  "format_repair_turns": [
+    15
+  ],
+  "rules_characters": 6510,
+  "protocol_characters": 2313
+}

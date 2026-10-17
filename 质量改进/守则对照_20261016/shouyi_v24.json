@@ -1,0 +1,3530 @@
+{
+  "variant": "shouyi_v24",
+  "status": "failed",
+  "started_at": "2026-10-16T10:11:35.066820+08:00",
+  "rules_file": "rules/shouyi-v2.4.md",
+  "rules_characters": 6557,
+  "rules_title": "# 守忆 · 角色记忆守则 v2.4",
+  "interface": "common-protocol.txt; original app source frozen; only runtime PROTOCOL overridden",
+  "model": {
+    "enabled": true,
+    "configured": true,
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "engine": "llm-v2"
+  },
+  "thinking": "disabled",
+  "temperature": 0,
+  "context_policy": "live memory + last 8 turns; owner only",
+  "network_retry_limit": 0,
+  "format_repair_limit": 1,
+  "planned_turns": 28,
+  "attempts": [
+    {
+      "turn": 1,
+      "started_at": "2026-10-16T10:11:40.513964+08:00",
+      "status": "saved",
+      "calls": [
+        {
+          "request_id": "e828c18d-4772-4435-ab76-5448dba31606",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:11:40.514110+00:00",
+          "elapsed_seconds": 7.203,
+          "usage": {
+            "prompt_tokens": 5097,
+            "completion_tokens": 1743,
+            "total_tokens": 6840,
+            "prompt_tokens_details": {
+              "cached_tokens": 3584
+            },
+            "prompt_cache_hit_tokens": 3584,
+            "prompt_cache_miss_tokens": 1513
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "started_at": "2026-10-16T10:11:52.021035+08:00",
+      "status": "saved",
+      "calls": [
+        {
+          "request_id": "b1bbeeac-b192-42ad-92a4-ab53993777d8",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:11:52.021364+00:00",
+          "elapsed_seconds": 5.488,
+          "usage": {
+            "prompt_tokens": 7449,
+            "completion_tokens": 1152,
+            "total_tokens": 8601,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 2713
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "started_at": "2026-10-16T10:12:01.142482+08:00",
+      "status": "saved",
+      "calls": [
+        {
+          "request_id": "219aab5f-2d9d-40b7-a637-b17ce382fc95",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:12:01.142766+00:00",
+          "elapsed_seconds": 5.723,
+          "usage": {
+            "prompt_tokens": 8693,
+            "completion_tokens": 1126,
+            "total_tokens": 9819,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 3957
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "started_at": "2026-10-16T10:12:10.839138+08:00",
+      "status": "saved",
+      "calls": [
+        {
+          "request_id": "ed5ec7ce-fed0-4433-a69b-fe4efa98b272",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:12:10.839643+00:00",
+          "elapsed_seconds": 5.454,
+          "usage": {
+            "prompt_tokens": 9716,
+            "completion_tokens": 1029,
+            "total_tokens": 10745,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 4980
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "started_at": "2026-10-16T10:12:19.073198+08:00",
+      "status": "saved",
+      "calls": [
+        {
+          "request_id": "55ed2734-4397-4c25-a070-1021a4187fa0",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:12:19.073648+00:00",
+          "elapsed_seconds": 3.171,
+          "usage": {
+            "prompt_tokens": 10662,
+            "completion_tokens": 472,
+            "total_tokens": 11134,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 5926
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "started_at": "2026-10-16T10:12:26.002510+08:00",
+      "status": "failed",
+      "error": "模型修正后仍未通过校验：候选信息取舍与操作映射不一致",
+      "calls": [
+        {
+          "request_id": "d4bed511-de7e-4489-85c9-e6bedc291b40",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:12:26.003052+00:00",
+          "elapsed_seconds": 6.445,
+          "usage": {
+            "prompt_tokens": 11120,
+            "completion_tokens": 1272,
+            "total_tokens": 12392,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 6384
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "validation_error": "候选信息取舍与操作映射不一致"
+        },
+        {
+          "request_id": "31495f44-ea66-4284-8772-f58a3807da9f",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:12:32.450287+00:00",
+          "elapsed_seconds": 4.717,
+          "usage": {
+            "prompt_tokens": 12297,
+            "completion_tokens": 1021,
+            "total_tokens": 13318,
+            "prompt_tokens_details": {
+              "cached_tokens": 11008
+            },
+            "prompt_cache_hit_tokens": 11008,
+            "prompt_cache_miss_tokens": 1289
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "repair"
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "started_at": "2026-10-16T10:13:55.445183+08:00",
+      "status": "saved",
+      "calls": [
+        {
+          "request_id": "a9b0637b-43c1-485a-a135-f6dcc08b4608",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:13:55.446307+00:00",
+          "elapsed_seconds": 7.217,
+          "usage": {
+            "prompt_tokens": 11120,
+            "completion_tokens": 1415,
+            "total_tokens": 12535,
+            "prompt_tokens_details": {
+              "cached_tokens": 10880
+            },
+            "prompt_cache_hit_tokens": 10880,
+            "prompt_cache_miss_tokens": 240
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "started_at": "2026-10-16T10:14:02.673489+08:00",
+      "status": "failed",
+      "error": "模型修正后仍未通过校验：候选信息与实际操作未逐项对应",
+      "calls": [
+        {
+          "request_id": "f22429df-1b9f-4d82-8b9c-a74e9bf9cbc8",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:14:02.674062+00:00",
+          "elapsed_seconds": 8.5,
+          "usage": {
+            "prompt_tokens": 12199,
+            "completion_tokens": 1934,
+            "total_tokens": 14133,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 7463
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "validation_error": "候选信息取舍与操作映射不一致"
+        },
+        {
+          "request_id": "c8f721f7-d099-4790-b035-eb38ff483af8",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:14:11.176124+00:00",
+          "elapsed_seconds": 5.764,
+          "usage": {
+            "prompt_tokens": 13960,
+            "completion_tokens": 1492,
+            "total_tokens": 15452,
+            "prompt_tokens_details": {
+              "cached_tokens": 12160
+            },
+            "prompt_cache_hit_tokens": 12160,
+            "prompt_cache_miss_tokens": 1800
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "repair"
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "started_at": "2026-10-16T10:15:45.580042+08:00",
+      "status": "failed",
+      "error": "模型修正后仍未通过校验：候选信息与实际操作未逐项对应",
+      "calls": [
+        {
+          "request_id": "242fd82c-1933-4cdc-a3db-e6cbaeba0098",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:15:45.581544+00:00",
+          "elapsed_seconds": 7.339,
+          "usage": {
+            "prompt_tokens": 12199,
+            "completion_tokens": 1604,
+            "total_tokens": 13803,
+            "prompt_tokens_details": {
+              "cached_tokens": 12032
+            },
+            "prompt_cache_hit_tokens": 12032,
+            "prompt_cache_miss_tokens": 167
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "validation_error": "候选信息与实际操作未逐项对应"
+        },
+        {
+          "request_id": "28d4db30-2deb-4651-8c6c-d470fcb83ac1",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:15:52.923723+00:00",
+          "elapsed_seconds": 6.094,
+          "usage": {
+            "prompt_tokens": 13653,
+            "completion_tokens": 1607,
+            "total_tokens": 15260,
+            "prompt_tokens_details": {
+              "cached_tokens": 12160
+            },
+            "prompt_cache_hit_tokens": 12160,
+            "prompt_cache_miss_tokens": 1493
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "repair"
+        }
+      ]
+    }
+  ],
+  "workspace": {
+    "id": "rules-comparison",
+    "title": "Official 28",
+    "kind": "sandbox",
+    "owner_id": "LIMING",
+    "owner_name": "李明",
+    "records": [
+      {
+        "id": "rules-comparison:user_name:1",
+        "owner_id": "LIMING",
+        "key": "user_name",
+        "label": "姓名",
+        "category": "FACT",
+        "value": "李明",
+        "status": "ACTIVE",
+        "source_turn": 1,
+        "updated_turn": 1,
+        "evidence": "我是李明",
+        "reason": "主人明确自述姓名，稳定身份信息。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 1,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:user_age:1",
+        "owner_id": "LIMING",
+        "key": "user_age",
+        "label": "年龄",
+        "category": "FACT",
+        "value": "35岁（第1轮自述）",
+        "status": "ACTIVE",
+        "source_turn": 1,
+        "updated_turn": 1,
+        "evidence": "今年35岁",
+        "reason": "年龄随时间变化，保留第1轮自述观测口径，不推算当前年龄。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 1,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:work_city:1",
+        "owner_id": "LIMING",
+        "key": "work_city",
+        "label": "工作城市",
+        "category": "FACT",
+        "value": "西安",
+        "status": "REVIEW",
+        "source_turn": 1,
+        "updated_turn": 6,
+        "evidence": "我在西安XX科技做产品经理",
+        "reason": "依据第4条，工作变化后工作城市是否仍为西安未知，转REVIEW。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 1,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:employer:1",
+        "owner_id": "LIMING",
+        "key": "employer",
+        "label": "任职公司",
+        "category": "FACT",
+        "value": "西安XX科技",
+        "status": "SUPERSEDED",
+        "source_turn": 1,
+        "updated_turn": 6,
+        "evidence": "我在西安XX科技做产品经理",
+        "reason": "任职公司为稳定职业信息。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 1,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:job_title:1",
+        "owner_id": "LIMING",
+        "key": "job_title",
+        "label": "职位",
+        "category": "FACT",
+        "value": "产品经理",
+        "status": "SUPERSEDED",
+        "source_turn": 1,
+        "updated_turn": 6,
+        "evidence": "我在西安XX科技做产品经理",
+        "reason": "职位为稳定职业信息，与公司分开记录。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 1,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:marital_status:1",
+        "owner_id": "LIMING",
+        "key": "marital_status",
+        "label": "婚姻状态",
+        "category": "FACT",
+        "value": "已婚",
+        "status": "ACTIVE",
+        "source_turn": 1,
+        "updated_turn": 1,
+        "evidence": "结婚了",
+        "reason": "婚姻状态为稳定家庭信息。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 1,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:daughter_relation:1",
+        "owner_id": "LIMING",
+        "key": "daughter_relation",
+        "label": "子女关系",
+        "category": "FACT",
+        "value": "有一个女儿",
+        "status": "ACTIVE",
+        "source_turn": 1,
+        "updated_turn": 1,
+        "evidence": "有个女儿5岁",
+        "reason": "子女关系为稳定家庭信息，独立于年龄与在读阶段。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 1,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:daughter_age:1",
+        "owner_id": "LIMING",
+        "key": "daughter_age",
+        "label": "女儿年龄",
+        "category": "FACT",
+        "value": "5岁（第1轮自述）",
+        "status": "ACTIVE",
+        "source_turn": 1,
+        "updated_turn": 1,
+        "evidence": "有个女儿5岁",
+        "reason": "年龄为观测口径，保留第1轮自述，不自动推算。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 1,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:daughter_school_stage:1",
+        "owner_id": "LIMING",
+        "key": "daughter_school_stage",
+        "label": "女儿在读阶段",
+        "category": "FACT",
+        "value": "刚上幼儿园",
+        "status": "ACTIVE",
+        "source_turn": 1,
+        "updated_turn": 1,
+        "evidence": "刚上幼儿园",
+        "reason": "在读阶段与年龄分开记录，学校变化不自动推出年龄。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 1,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:commute_route:2",
+        "owner_id": "LIMING",
+        "key": "commute_route",
+        "label": "通勤路线",
+        "category": "FACT",
+        "value": "每天从长安区开车到高新区上班，走科技路",
+        "status": "REVIEW",
+        "source_turn": 2,
+        "updated_turn": 6,
+        "evidence": "我每天从长安区开车到高新区上班，走科技路那边",
+        "reason": "依据第4条，工作变化后原通勤路线是否仍适用未知，转REVIEW。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 2,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:commute_duration:2",
+        "owner_id": "LIMING",
+        "key": "commute_duration",
+        "label": "通勤时长",
+        "category": "FACT",
+        "value": "不堵车约40分钟，早高峰约50分钟",
+        "status": "ACTIVE",
+        "source_turn": 2,
+        "updated_turn": 2,
+        "evidence": "不堵车大概40分钟，早高峰一般要50分钟",
+        "reason": "主人明确给出两种情形时长，保留原话确定程度。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 2,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:swimming_schedule:2",
+        "owner_id": "LIMING",
+        "key": "swimming_schedule",
+        "label": "游泳安排",
+        "category": "PREFERENCE",
+        "value": "在长安区体育馆办了年卡，每周三晚上去游泳",
+        "status": "ACTIVE",
+        "source_turn": 2,
+        "updated_turn": 2,
+        "evidence": "我在长安区体育馆办了张年卡，每周三晚上去游泳",
+        "reason": "固定安排，有持续使用价值，用PREFERENCE表示。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 2,
+          "time_text": "每周三晚上",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:car_maintenance_location:2",
+        "owner_id": "LIMING",
+        "key": "car_maintenance_location",
+        "label": "车辆保养地点",
+        "category": "FACT",
+        "value": "长安区那边的4S店",
+        "status": "ACTIVE",
+        "source_turn": 2,
+        "updated_turn": 2,
+        "evidence": "车也是在那边的4S店做保养",
+        "reason": "稳定服务信息，有持续使用价值。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 2,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:health_fatty_liver:3",
+        "owner_id": "LIMING",
+        "key": "health_fatty_liver",
+        "label": "健康状况-轻度脂肪肝",
+        "category": "HEALTH",
+        "value": "体检发现轻度脂肪肝",
+        "status": "ACTIVE",
+        "source_turn": 3,
+        "updated_turn": 3,
+        "evidence": "医生说我有轻度脂肪肝",
+        "reason": "主人明确自述体检结果，健康事实，有长期参考价值。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 3,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:health_advice:3",
+        "owner_id": "LIMING",
+        "key": "health_advice",
+        "label": "健康医嘱",
+        "category": "HEALTH",
+        "value": "控制饮食、少吃油腻、多运动",
+        "status": "ACTIVE",
+        "source_turn": 3,
+        "updated_turn": 3,
+        "evidence": "建议控制饮食少吃油腻的，多运动",
+        "reason": "医生明确建议，需持续跟进，与诊断分开记录。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 3,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:tcm_medication_schedule:3",
+        "owner_id": "LIMING",
+        "key": "tcm_medication_schedule",
+        "label": "中药调理取药安排",
+        "category": "PREFERENCE",
+        "value": "在长安路同仁堂开了调理方子，每周去拿一次药",
+        "status": "ACTIVE",
+        "source_turn": 3,
+        "updated_turn": 3,
+        "evidence": "医生还让去长安路同仁堂开了个调理方子，我每周去拿一次药",
+        "reason": "阶段性取药安排，有跟进价值，用PREFERENCE表示；未说明结束条件，按temporary记录。",
+        "validity": {
+          "kind": "temporary",
+          "reference_turn": 3,
+          "time_text": "每周去拿一次药",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:spouse_occupation:4",
+        "owner_id": "LIMING",
+        "key": "spouse_occupation",
+        "label": "配偶职业",
+        "category": "FACT",
+        "value": "在一家设计公司上班，做平面设计",
+        "status": "ACTIVE",
+        "source_turn": 4,
+        "updated_turn": 4,
+        "evidence": "我老婆在一家设计公司上班，做平面设计。",
+        "reason": "主人明确自述配偶职业，稳定家庭信息，独立记录。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 4,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:daughter_school_location:4",
+        "owner_id": "LIMING",
+        "key": "daughter_school_location",
+        "label": "女儿幼儿园位置",
+        "category": "FACT",
+        "value": "家附近的幼儿园",
+        "status": "ACTIVE",
+        "source_turn": 4,
+        "updated_turn": 4,
+        "evidence": "我女儿就在我们家附近的幼儿园上学，挺方便的。",
+        "reason": "就读地点与在读阶段分开记录，不覆盖已有“刚上幼儿园”阶段事实。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 4,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:daughter_art_class:4",
+        "owner_id": "LIMING",
+        "key": "daughter_art_class",
+        "label": "女儿美术启蒙班安排",
+        "category": "PREFERENCE",
+        "value": "在幼儿园旁边报了美术启蒙班，每周六下午去上",
+        "status": "ACTIVE",
+        "source_turn": 4,
+        "updated_turn": 4,
+        "evidence": "她还在幼儿园旁边报了个美术启蒙班，每周六下午去上。",
+        "reason": "固定课外安排，有持续跟进价值，用PREFERENCE表示。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 4,
+          "time_text": "每周六下午",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:pmp_cert_goal:5",
+        "owner_id": "LIMING",
+        "key": "pmp_cert_goal",
+        "label": "PMP证书备考目标",
+        "category": "GOAL",
+        "value": "今年打算考PMP证书，提升项目管理能力，考试大概9月，需开始准备",
+        "status": "ACTIVE",
+        "source_turn": 5,
+        "updated_turn": 5,
+        "evidence": "我今年打算考个PMP证书，提升项目管理能力，考试大概9月，得开始准备了。",
+        "reason": "主人明确自述阶段性备考目标，有持续跟进价值，保存为GOAL；考试时间仅为大概9月，保留原确定程度，时效temporary。",
+        "validity": {
+          "kind": "temporary",
+          "reference_turn": 5,
+          "time_text": "今年……考试大概9月",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:employer:6",
+        "owner_id": "LIMING",
+        "key": "employer",
+        "label": "任职公司",
+        "category": "FACT",
+        "value": "YY网络科技有限公司",
+        "status": "ACTIVE",
+        "source_turn": 6,
+        "updated_turn": 6,
+        "evidence": "现在在YY网络科技有限公司任高级产品总监",
+        "reason": "主人明确自述新任职公司，依据第3条新值有效、旧值失效。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 6,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:job_title:6",
+        "owner_id": "LIMING",
+        "key": "job_title",
+        "label": "职位",
+        "category": "FACT",
+        "value": "高级产品总监",
+        "status": "ACTIVE",
+        "source_turn": 6,
+        "updated_turn": 6,
+        "evidence": "现在在YY网络科技有限公司任高级产品总监",
+        "reason": "主人明确自述新职位，依据第3条新值有效、旧值失效。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 6,
+          "time_text": "",
+          "end_condition": ""
+        }
+      },
+      {
+        "id": "rules-comparison:salary_trend:6",
+        "owner_id": "LIMING",
+        "key": "salary_trend",
+        "label": "薪资变化方向",
+        "category": "FACT",
+        "value": "跳槽后薪资涨了不少（未说明具体数额）",
+        "status": "ACTIVE",
+        "source_turn": 6,
+        "updated_turn": 6,
+        "evidence": "薪资涨了不少",
+        "reason": "依据第2条，薪酬变化方向明确，有长期参考价值；不推算未说出的金额或区间。",
+        "validity": {
+          "kind": "ongoing",
+          "reference_turn": 6,
+          "time_text": "",
+          "end_condition": ""
+        }
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "role": "owner",
+        "speaker": "李明",
+        "input": "小星你好，我是李明，今年35岁。我在西安XX科技做产品经理，结婚了，有个女儿5岁，刚上幼儿园。以后你就是我的个人助手了，多多关照。",
+        "response": "你好李明，很高兴认识你！我已经记下了：你今年35岁，在西安XX科技做产品经理，已婚，女儿5岁刚上幼儿园。以后有需要随时找我，多多关照～",
+        "decision": "change",
+        "reason": "主人本人首次自我介绍，提供了多项稳定身份信息：年龄35岁、居住/工作城市西安、公司XX科技、职位产品经理、已婚、女儿5岁且刚上幼儿园。这些均满足长期使用价值，应分别建立独立属性。女儿年龄与在读阶段分开记录，学校变化不自动推出年龄。所有信息均为主人明确陈述，status为ACTIVE，validity为ongoing。",
+        "rule": "2,3,8",
+        "mode": "llm",
+        "warnings": [],
+        "used_keys": [],
+        "changes": [
+          {
+            "key": "user_name",
+            "label": "姓名",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "李明",
+            "status": "ACTIVE",
+            "reason": "主人明确自述姓名，稳定身份信息。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "user_age",
+            "label": "年龄",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "35岁（第1轮自述）",
+            "status": "ACTIVE",
+            "reason": "年龄随时间变化，保留第1轮自述观测口径，不推算当前年龄。",
+            "rule": "3",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "work_city",
+            "label": "工作城市",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "西安",
+            "status": "ACTIVE",
+            "reason": "工作城市为稳定信息，独立记录便于后续变更。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "employer",
+            "label": "任职公司",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "西安XX科技",
+            "status": "ACTIVE",
+            "reason": "任职公司为稳定职业信息。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "job_title",
+            "label": "职位",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "产品经理",
+            "status": "ACTIVE",
+            "reason": "职位为稳定职业信息，与公司分开记录。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "marital_status",
+            "label": "婚姻状态",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "已婚",
+            "status": "ACTIVE",
+            "reason": "婚姻状态为稳定家庭信息。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "daughter_relation",
+            "label": "子女关系",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "有一个女儿",
+            "status": "ACTIVE",
+            "reason": "子女关系为稳定家庭信息，独立于年龄与在读阶段。",
+            "rule": "2,3",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "daughter_age",
+            "label": "女儿年龄",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "5岁（第1轮自述）",
+            "status": "ACTIVE",
+            "reason": "年龄为观测口径，保留第1轮自述，不自动推算。",
+            "rule": "3",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "daughter_school_stage",
+            "label": "女儿在读阶段",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "刚上幼儿园",
+            "status": "ACTIVE",
+            "reason": "在读阶段与年龄分开记录，学校变化不自动推出年龄。",
+            "rule": "3",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          }
+        ],
+        "model_call": {
+          "request_id": "e828c18d-4772-4435-ab76-5448dba31606",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:11:40.514110+00:00",
+          "elapsed_seconds": 7.203,
+          "usage": {
+            "prompt_tokens": 5097,
+            "completion_tokens": 1743,
+            "total_tokens": 6840,
+            "prompt_tokens_details": {
+              "cached_tokens": 3584
+            },
+            "prompt_cache_hit_tokens": 3584,
+            "prompt_cache_miss_tokens": 1513
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        },
+        "checks": [
+          {
+            "label": "输入来源",
+            "value": "主人本人"
+          },
+          {
+            "label": "决策者",
+            "value": "deepseek-flash"
+          },
+          {
+            "label": "实际操作",
+            "value": "9项变化"
+          }
+        ],
+        "snapshot": [
+          {
+            "id": "rules-comparison:user_name:1",
+            "owner_id": "LIMING",
+            "key": "user_name",
+            "label": "姓名",
+            "category": "FACT",
+            "value": "李明",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我是李明",
+            "reason": "主人明确自述姓名，稳定身份信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:user_age:1",
+            "owner_id": "LIMING",
+            "key": "user_age",
+            "label": "年龄",
+            "category": "FACT",
+            "value": "35岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "今年35岁",
+            "reason": "年龄随时间变化，保留第1轮自述观测口径，不推算当前年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:work_city:1",
+            "owner_id": "LIMING",
+            "key": "work_city",
+            "label": "工作城市",
+            "category": "FACT",
+            "value": "西安",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "工作城市为稳定信息，独立记录便于后续变更。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:employer:1",
+            "owner_id": "LIMING",
+            "key": "employer",
+            "label": "任职公司",
+            "category": "FACT",
+            "value": "西安XX科技",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "任职公司为稳定职业信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:job_title:1",
+            "owner_id": "LIMING",
+            "key": "job_title",
+            "label": "职位",
+            "category": "FACT",
+            "value": "产品经理",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "职位为稳定职业信息，与公司分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:marital_status:1",
+            "owner_id": "LIMING",
+            "key": "marital_status",
+            "label": "婚姻状态",
+            "category": "FACT",
+            "value": "已婚",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "结婚了",
+            "reason": "婚姻状态为稳定家庭信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_relation:1",
+            "owner_id": "LIMING",
+            "key": "daughter_relation",
+            "label": "子女关系",
+            "category": "FACT",
+            "value": "有一个女儿",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "子女关系为稳定家庭信息，独立于年龄与在读阶段。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_age:1",
+            "owner_id": "LIMING",
+            "key": "daughter_age",
+            "label": "女儿年龄",
+            "category": "FACT",
+            "value": "5岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "年龄为观测口径，保留第1轮自述，不自动推算。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_school_stage:1",
+            "owner_id": "LIMING",
+            "key": "daughter_school_stage",
+            "label": "女儿在读阶段",
+            "category": "FACT",
+            "value": "刚上幼儿园",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "刚上幼儿园",
+            "reason": "在读阶段与年龄分开记录，学校变化不自动推出年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          }
+        ]
+      },
+      {
+        "turn": 2,
+        "role": "owner",
+        "speaker": "李明",
+        "input": "我每天从长安区开车到高新区上班，走科技路那边，不堵车大概40分钟，早高峰一般要50分钟。对了，我在长安区体育馆办了张年卡，每周三晚上去游泳；车也是在那边的4S店做保养。",
+        "response": "已记下：你每天从长安区开车到高新区上班，走科技路，不堵车约40分钟、早高峰约50分钟；在长安区体育馆办了年卡，每周三晚上游泳；车在长安区那边的4S店保养。",
+        "decision": "change",
+        "reason": "主人本轮明确提供通勤路线与时长、居住区域、游泳固定安排及车辆保养地点，均为有持续使用价值的稳定信息，应分别建立独立属性。通勤时长区分不堵车与早高峰两种情形，保留原话口径。游泳为每周三固定安排，用PREFERENCE表示，validity为ongoing（每周三持续适用）。车辆保养地点为稳定服务信息。未出现需要复核的旧条目变化，现有记忆均保留。",
+        "rule": "2,3,4",
+        "mode": "llm",
+        "warnings": [],
+        "used_keys": [],
+        "changes": [
+          {
+            "key": "commute_route",
+            "label": "通勤路线",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "每天从长安区开车到高新区上班，走科技路",
+            "status": "ACTIVE",
+            "reason": "主人明确自述通勤路线，稳定信息。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "commute_duration",
+            "label": "通勤时长",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "不堵车约40分钟，早高峰约50分钟",
+            "status": "ACTIVE",
+            "reason": "主人明确给出两种情形时长，保留原话确定程度。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "swimming_schedule",
+            "label": "游泳安排",
+            "category": "PREFERENCE",
+            "action": "新增",
+            "before": null,
+            "after": "在长安区体育馆办了年卡，每周三晚上去游泳",
+            "status": "ACTIVE",
+            "reason": "固定安排，有持续使用价值，用PREFERENCE表示。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "每周三晚上",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "car_maintenance_location",
+            "label": "车辆保养地点",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "长安区那边的4S店",
+            "status": "ACTIVE",
+            "reason": "稳定服务信息，有持续使用价值。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          }
+        ],
+        "model_call": {
+          "request_id": "b1bbeeac-b192-42ad-92a4-ab53993777d8",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:11:52.021364+00:00",
+          "elapsed_seconds": 5.488,
+          "usage": {
+            "prompt_tokens": 7449,
+            "completion_tokens": 1152,
+            "total_tokens": 8601,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 2713
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        },
+        "checks": [
+          {
+            "label": "输入来源",
+            "value": "主人本人"
+          },
+          {
+            "label": "决策者",
+            "value": "deepseek-flash"
+          },
+          {
+            "label": "实际操作",
+            "value": "4项变化"
+          }
+        ],
+        "snapshot": [
+          {
+            "id": "rules-comparison:user_name:1",
+            "owner_id": "LIMING",
+            "key": "user_name",
+            "label": "姓名",
+            "category": "FACT",
+            "value": "李明",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我是李明",
+            "reason": "主人明确自述姓名，稳定身份信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:user_age:1",
+            "owner_id": "LIMING",
+            "key": "user_age",
+            "label": "年龄",
+            "category": "FACT",
+            "value": "35岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "今年35岁",
+            "reason": "年龄随时间变化，保留第1轮自述观测口径，不推算当前年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:work_city:1",
+            "owner_id": "LIMING",
+            "key": "work_city",
+            "label": "工作城市",
+            "category": "FACT",
+            "value": "西安",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "工作城市为稳定信息，独立记录便于后续变更。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:employer:1",
+            "owner_id": "LIMING",
+            "key": "employer",
+            "label": "任职公司",
+            "category": "FACT",
+            "value": "西安XX科技",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "任职公司为稳定职业信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:job_title:1",
+            "owner_id": "LIMING",
+            "key": "job_title",
+            "label": "职位",
+            "category": "FACT",
+            "value": "产品经理",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "职位为稳定职业信息，与公司分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:marital_status:1",
+            "owner_id": "LIMING",
+            "key": "marital_status",
+            "label": "婚姻状态",
+            "category": "FACT",
+            "value": "已婚",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "结婚了",
+            "reason": "婚姻状态为稳定家庭信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_relation:1",
+            "owner_id": "LIMING",
+            "key": "daughter_relation",
+            "label": "子女关系",
+            "category": "FACT",
+            "value": "有一个女儿",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "子女关系为稳定家庭信息，独立于年龄与在读阶段。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_age:1",
+            "owner_id": "LIMING",
+            "key": "daughter_age",
+            "label": "女儿年龄",
+            "category": "FACT",
+            "value": "5岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "年龄为观测口径，保留第1轮自述，不自动推算。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_school_stage:1",
+            "owner_id": "LIMING",
+            "key": "daughter_school_stage",
+            "label": "女儿在读阶段",
+            "category": "FACT",
+            "value": "刚上幼儿园",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "刚上幼儿园",
+            "reason": "在读阶段与年龄分开记录，学校变化不自动推出年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_route:2",
+            "owner_id": "LIMING",
+            "key": "commute_route",
+            "label": "通勤路线",
+            "category": "FACT",
+            "value": "每天从长安区开车到高新区上班，走科技路",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我每天从长安区开车到高新区上班，走科技路那边",
+            "reason": "主人明确自述通勤路线，稳定信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_duration:2",
+            "owner_id": "LIMING",
+            "key": "commute_duration",
+            "label": "通勤时长",
+            "category": "FACT",
+            "value": "不堵车约40分钟，早高峰约50分钟",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "不堵车大概40分钟，早高峰一般要50分钟",
+            "reason": "主人明确给出两种情形时长，保留原话确定程度。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:swimming_schedule:2",
+            "owner_id": "LIMING",
+            "key": "swimming_schedule",
+            "label": "游泳安排",
+            "category": "PREFERENCE",
+            "value": "在长安区体育馆办了年卡，每周三晚上去游泳",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我在长安区体育馆办了张年卡，每周三晚上去游泳",
+            "reason": "固定安排，有持续使用价值，用PREFERENCE表示。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "每周三晚上",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:car_maintenance_location:2",
+            "owner_id": "LIMING",
+            "key": "car_maintenance_location",
+            "label": "车辆保养地点",
+            "category": "FACT",
+            "value": "长安区那边的4S店",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "车也是在那边的4S店做保养",
+            "reason": "稳定服务信息，有持续使用价值。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          }
+        ]
+      },
+      {
+        "turn": 3,
+        "role": "owner",
+        "speaker": "李明",
+        "input": "最近体检结果出来了，医生说我有轻度脂肪肝，建议控制饮食少吃油腻的，多运动。哎，中年人的烦恼。医生还让去长安路同仁堂开了个调理方子，我每周去拿一次药。",
+        "response": "已记下：体检发现轻度脂肪肝，医生建议控制饮食、少吃油腻、多运动；在长安路同仁堂开了调理方子，每周去拿一次药。游泳安排与多运动建议方向一致，继续保留。中年人的烦恼确实不少，注意饮食和运动，慢慢调理～",
+        "decision": "change",
+        "reason": "主人本轮明确自述体检结果：轻度脂肪肝、医生建议控制饮食少吃油腻多运动、在长安路同仁堂开调理方子并每周取药一次。这些属于健康自述与需跟进的取药安排，有持续使用价值，应分别记录。'中年人的烦恼'为情绪感叹，无长期价值，忽略。健康变化后需复核依赖旧健康条件的安排：现有游泳安排与运动建议方向一致，且主人未说明变化，保留；车辆保养、通勤等与健康无关，保留。",
+        "rule": "2,3,4",
+        "mode": "llm",
+        "warnings": [],
+        "used_keys": [
+          "swimming_schedule",
+          "car_maintenance_location",
+          "commute_route"
+        ],
+        "changes": [
+          {
+            "key": "health_fatty_liver",
+            "label": "健康状况-轻度脂肪肝",
+            "category": "HEALTH",
+            "action": "新增",
+            "before": null,
+            "after": "体检发现轻度脂肪肝",
+            "status": "ACTIVE",
+            "reason": "主人明确自述体检结果，健康事实，有长期参考价值。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "health_advice",
+            "label": "健康医嘱",
+            "category": "HEALTH",
+            "action": "新增",
+            "before": null,
+            "after": "控制饮食、少吃油腻、多运动",
+            "status": "ACTIVE",
+            "reason": "医生明确建议，需持续跟进，与诊断分开记录。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "tcm_medication_schedule",
+            "label": "中药调理取药安排",
+            "category": "PREFERENCE",
+            "action": "新增",
+            "before": null,
+            "after": "在长安路同仁堂开了调理方子，每周去拿一次药",
+            "status": "ACTIVE",
+            "reason": "阶段性取药安排，有跟进价值，用PREFERENCE表示；未说明结束条件，按temporary记录。",
+            "rule": "2,3",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "temporary",
+              "reference_turn": 3,
+              "time_text": "每周去拿一次药",
+              "end_condition": ""
+            }
+          }
+        ],
+        "model_call": {
+          "request_id": "219aab5f-2d9d-40b7-a637-b17ce382fc95",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:12:01.142766+00:00",
+          "elapsed_seconds": 5.723,
+          "usage": {
+            "prompt_tokens": 8693,
+            "completion_tokens": 1126,
+            "total_tokens": 9819,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 3957
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        },
+        "checks": [
+          {
+            "label": "输入来源",
+            "value": "主人本人"
+          },
+          {
+            "label": "决策者",
+            "value": "deepseek-flash"
+          },
+          {
+            "label": "实际操作",
+            "value": "3项变化"
+          }
+        ],
+        "snapshot": [
+          {
+            "id": "rules-comparison:user_name:1",
+            "owner_id": "LIMING",
+            "key": "user_name",
+            "label": "姓名",
+            "category": "FACT",
+            "value": "李明",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我是李明",
+            "reason": "主人明确自述姓名，稳定身份信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:user_age:1",
+            "owner_id": "LIMING",
+            "key": "user_age",
+            "label": "年龄",
+            "category": "FACT",
+            "value": "35岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "今年35岁",
+            "reason": "年龄随时间变化，保留第1轮自述观测口径，不推算当前年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:work_city:1",
+            "owner_id": "LIMING",
+            "key": "work_city",
+            "label": "工作城市",
+            "category": "FACT",
+            "value": "西安",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "工作城市为稳定信息，独立记录便于后续变更。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:employer:1",
+            "owner_id": "LIMING",
+            "key": "employer",
+            "label": "任职公司",
+            "category": "FACT",
+            "value": "西安XX科技",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "任职公司为稳定职业信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:job_title:1",
+            "owner_id": "LIMING",
+            "key": "job_title",
+            "label": "职位",
+            "category": "FACT",
+            "value": "产品经理",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "职位为稳定职业信息，与公司分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:marital_status:1",
+            "owner_id": "LIMING",
+            "key": "marital_status",
+            "label": "婚姻状态",
+            "category": "FACT",
+            "value": "已婚",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "结婚了",
+            "reason": "婚姻状态为稳定家庭信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_relation:1",
+            "owner_id": "LIMING",
+            "key": "daughter_relation",
+            "label": "子女关系",
+            "category": "FACT",
+            "value": "有一个女儿",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "子女关系为稳定家庭信息，独立于年龄与在读阶段。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_age:1",
+            "owner_id": "LIMING",
+            "key": "daughter_age",
+            "label": "女儿年龄",
+            "category": "FACT",
+            "value": "5岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "年龄为观测口径，保留第1轮自述，不自动推算。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_school_stage:1",
+            "owner_id": "LIMING",
+            "key": "daughter_school_stage",
+            "label": "女儿在读阶段",
+            "category": "FACT",
+            "value": "刚上幼儿园",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "刚上幼儿园",
+            "reason": "在读阶段与年龄分开记录，学校变化不自动推出年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_route:2",
+            "owner_id": "LIMING",
+            "key": "commute_route",
+            "label": "通勤路线",
+            "category": "FACT",
+            "value": "每天从长安区开车到高新区上班，走科技路",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我每天从长安区开车到高新区上班，走科技路那边",
+            "reason": "主人明确自述通勤路线，稳定信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_duration:2",
+            "owner_id": "LIMING",
+            "key": "commute_duration",
+            "label": "通勤时长",
+            "category": "FACT",
+            "value": "不堵车约40分钟，早高峰约50分钟",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "不堵车大概40分钟，早高峰一般要50分钟",
+            "reason": "主人明确给出两种情形时长，保留原话确定程度。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:swimming_schedule:2",
+            "owner_id": "LIMING",
+            "key": "swimming_schedule",
+            "label": "游泳安排",
+            "category": "PREFERENCE",
+            "value": "在长安区体育馆办了年卡，每周三晚上去游泳",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我在长安区体育馆办了张年卡，每周三晚上去游泳",
+            "reason": "固定安排，有持续使用价值，用PREFERENCE表示。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "每周三晚上",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:car_maintenance_location:2",
+            "owner_id": "LIMING",
+            "key": "car_maintenance_location",
+            "label": "车辆保养地点",
+            "category": "FACT",
+            "value": "长安区那边的4S店",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "车也是在那边的4S店做保养",
+            "reason": "稳定服务信息，有持续使用价值。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:health_fatty_liver:3",
+            "owner_id": "LIMING",
+            "key": "health_fatty_liver",
+            "label": "健康状况-轻度脂肪肝",
+            "category": "HEALTH",
+            "value": "体检发现轻度脂肪肝",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "医生说我有轻度脂肪肝",
+            "reason": "主人明确自述体检结果，健康事实，有长期参考价值。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:health_advice:3",
+            "owner_id": "LIMING",
+            "key": "health_advice",
+            "label": "健康医嘱",
+            "category": "HEALTH",
+            "value": "控制饮食、少吃油腻、多运动",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "建议控制饮食少吃油腻的，多运动",
+            "reason": "医生明确建议，需持续跟进，与诊断分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:tcm_medication_schedule:3",
+            "owner_id": "LIMING",
+            "key": "tcm_medication_schedule",
+            "label": "中药调理取药安排",
+            "category": "PREFERENCE",
+            "value": "在长安路同仁堂开了调理方子，每周去拿一次药",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "医生还让去长安路同仁堂开了个调理方子，我每周去拿一次药",
+            "reason": "阶段性取药安排，有跟进价值，用PREFERENCE表示；未说明结束条件，按temporary记录。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 3,
+              "time_text": "每周去拿一次药",
+              "end_condition": ""
+            }
+          }
+        ]
+      },
+      {
+        "turn": 4,
+        "role": "owner",
+        "speaker": "李明",
+        "input": "我老婆在一家设计公司上班，做平面设计。我女儿就在我们家附近的幼儿园上学，挺方便的。她还在幼儿园旁边报了个美术启蒙班，每周六下午去上。",
+        "response": "已记下：你爱人在一家设计公司做平面设计；女儿在你们家附近的幼儿园上学；她还在幼儿园旁边报了美术启蒙班，每周六下午去上。",
+        "decision": "change",
+        "reason": "本轮主人明确提供三项稳定家庭信息：配偶职业（设计公司平面设计）、女儿就读幼儿园位置（家附近）、女儿课外美术启蒙班安排（幼儿园旁、每周六下午）。均具长期或当前阶段使用价值，应新增。女儿在读阶段已有“刚上幼儿园”，本轮补充“家附近”为地点信息，不改变在读阶段，故不覆盖旧值，另建地点属性。美术班为固定安排，用PREFERENCE表示。无关联旧条目需复核：通勤、游泳、保养、取药安排均未受本轮信息影响。",
+        "rule": "2,3,4",
+        "mode": "llm",
+        "warnings": [],
+        "used_keys": [
+          "daughter_school_stage"
+        ],
+        "changes": [
+          {
+            "key": "spouse_occupation",
+            "label": "配偶职业",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "在一家设计公司上班，做平面设计",
+            "status": "ACTIVE",
+            "reason": "主人明确自述配偶职业，稳定家庭信息，独立记录。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "daughter_school_location",
+            "label": "女儿幼儿园位置",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "家附近的幼儿园",
+            "status": "ACTIVE",
+            "reason": "就读地点与在读阶段分开记录，不覆盖已有“刚上幼儿园”阶段事实。",
+            "rule": "2,3",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "daughter_art_class",
+            "label": "女儿美术启蒙班安排",
+            "category": "PREFERENCE",
+            "action": "新增",
+            "before": null,
+            "after": "在幼儿园旁边报了美术启蒙班，每周六下午去上",
+            "status": "ACTIVE",
+            "reason": "固定课外安排，有持续跟进价值，用PREFERENCE表示。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "每周六下午",
+              "end_condition": ""
+            }
+          }
+        ],
+        "model_call": {
+          "request_id": "ed5ec7ce-fed0-4433-a69b-fe4efa98b272",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:12:10.839643+00:00",
+          "elapsed_seconds": 5.454,
+          "usage": {
+            "prompt_tokens": 9716,
+            "completion_tokens": 1029,
+            "total_tokens": 10745,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 4980
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        },
+        "checks": [
+          {
+            "label": "输入来源",
+            "value": "主人本人"
+          },
+          {
+            "label": "决策者",
+            "value": "deepseek-flash"
+          },
+          {
+            "label": "实际操作",
+            "value": "3项变化"
+          }
+        ],
+        "snapshot": [
+          {
+            "id": "rules-comparison:user_name:1",
+            "owner_id": "LIMING",
+            "key": "user_name",
+            "label": "姓名",
+            "category": "FACT",
+            "value": "李明",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我是李明",
+            "reason": "主人明确自述姓名，稳定身份信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:user_age:1",
+            "owner_id": "LIMING",
+            "key": "user_age",
+            "label": "年龄",
+            "category": "FACT",
+            "value": "35岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "今年35岁",
+            "reason": "年龄随时间变化，保留第1轮自述观测口径，不推算当前年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:work_city:1",
+            "owner_id": "LIMING",
+            "key": "work_city",
+            "label": "工作城市",
+            "category": "FACT",
+            "value": "西安",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "工作城市为稳定信息，独立记录便于后续变更。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:employer:1",
+            "owner_id": "LIMING",
+            "key": "employer",
+            "label": "任职公司",
+            "category": "FACT",
+            "value": "西安XX科技",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "任职公司为稳定职业信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:job_title:1",
+            "owner_id": "LIMING",
+            "key": "job_title",
+            "label": "职位",
+            "category": "FACT",
+            "value": "产品经理",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "职位为稳定职业信息，与公司分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:marital_status:1",
+            "owner_id": "LIMING",
+            "key": "marital_status",
+            "label": "婚姻状态",
+            "category": "FACT",
+            "value": "已婚",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "结婚了",
+            "reason": "婚姻状态为稳定家庭信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_relation:1",
+            "owner_id": "LIMING",
+            "key": "daughter_relation",
+            "label": "子女关系",
+            "category": "FACT",
+            "value": "有一个女儿",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "子女关系为稳定家庭信息，独立于年龄与在读阶段。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_age:1",
+            "owner_id": "LIMING",
+            "key": "daughter_age",
+            "label": "女儿年龄",
+            "category": "FACT",
+            "value": "5岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "年龄为观测口径，保留第1轮自述，不自动推算。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_school_stage:1",
+            "owner_id": "LIMING",
+            "key": "daughter_school_stage",
+            "label": "女儿在读阶段",
+            "category": "FACT",
+            "value": "刚上幼儿园",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "刚上幼儿园",
+            "reason": "在读阶段与年龄分开记录，学校变化不自动推出年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_route:2",
+            "owner_id": "LIMING",
+            "key": "commute_route",
+            "label": "通勤路线",
+            "category": "FACT",
+            "value": "每天从长安区开车到高新区上班，走科技路",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我每天从长安区开车到高新区上班，走科技路那边",
+            "reason": "主人明确自述通勤路线，稳定信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_duration:2",
+            "owner_id": "LIMING",
+            "key": "commute_duration",
+            "label": "通勤时长",
+            "category": "FACT",
+            "value": "不堵车约40分钟，早高峰约50分钟",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "不堵车大概40分钟，早高峰一般要50分钟",
+            "reason": "主人明确给出两种情形时长，保留原话确定程度。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:swimming_schedule:2",
+            "owner_id": "LIMING",
+            "key": "swimming_schedule",
+            "label": "游泳安排",
+            "category": "PREFERENCE",
+            "value": "在长安区体育馆办了年卡，每周三晚上去游泳",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我在长安区体育馆办了张年卡，每周三晚上去游泳",
+            "reason": "固定安排，有持续使用价值，用PREFERENCE表示。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "每周三晚上",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:car_maintenance_location:2",
+            "owner_id": "LIMING",
+            "key": "car_maintenance_location",
+            "label": "车辆保养地点",
+            "category": "FACT",
+            "value": "长安区那边的4S店",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "车也是在那边的4S店做保养",
+            "reason": "稳定服务信息，有持续使用价值。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:health_fatty_liver:3",
+            "owner_id": "LIMING",
+            "key": "health_fatty_liver",
+            "label": "健康状况-轻度脂肪肝",
+            "category": "HEALTH",
+            "value": "体检发现轻度脂肪肝",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "医生说我有轻度脂肪肝",
+            "reason": "主人明确自述体检结果，健康事实，有长期参考价值。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:health_advice:3",
+            "owner_id": "LIMING",
+            "key": "health_advice",
+            "label": "健康医嘱",
+            "category": "HEALTH",
+            "value": "控制饮食、少吃油腻、多运动",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "建议控制饮食少吃油腻的，多运动",
+            "reason": "医生明确建议，需持续跟进，与诊断分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:tcm_medication_schedule:3",
+            "owner_id": "LIMING",
+            "key": "tcm_medication_schedule",
+            "label": "中药调理取药安排",
+            "category": "PREFERENCE",
+            "value": "在长安路同仁堂开了调理方子，每周去拿一次药",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "医生还让去长安路同仁堂开了个调理方子，我每周去拿一次药",
+            "reason": "阶段性取药安排，有跟进价值，用PREFERENCE表示；未说明结束条件，按temporary记录。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 3,
+              "time_text": "每周去拿一次药",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:spouse_occupation:4",
+            "owner_id": "LIMING",
+            "key": "spouse_occupation",
+            "label": "配偶职业",
+            "category": "FACT",
+            "value": "在一家设计公司上班，做平面设计",
+            "status": "ACTIVE",
+            "source_turn": 4,
+            "updated_turn": 4,
+            "evidence": "我老婆在一家设计公司上班，做平面设计。",
+            "reason": "主人明确自述配偶职业，稳定家庭信息，独立记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_school_location:4",
+            "owner_id": "LIMING",
+            "key": "daughter_school_location",
+            "label": "女儿幼儿园位置",
+            "category": "FACT",
+            "value": "家附近的幼儿园",
+            "status": "ACTIVE",
+            "source_turn": 4,
+            "updated_turn": 4,
+            "evidence": "我女儿就在我们家附近的幼儿园上学，挺方便的。",
+            "reason": "就读地点与在读阶段分开记录，不覆盖已有“刚上幼儿园”阶段事实。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_art_class:4",
+            "owner_id": "LIMING",
+            "key": "daughter_art_class",
+            "label": "女儿美术启蒙班安排",
+            "category": "PREFERENCE",
+            "value": "在幼儿园旁边报了美术启蒙班，每周六下午去上",
+            "status": "ACTIVE",
+            "source_turn": 4,
+            "updated_turn": 4,
+            "evidence": "她还在幼儿园旁边报了个美术启蒙班，每周六下午去上。",
+            "reason": "固定课外安排，有持续跟进价值，用PREFERENCE表示。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "每周六下午",
+              "end_condition": ""
+            }
+          }
+        ]
+      },
+      {
+        "turn": 5,
+        "role": "owner",
+        "speaker": "李明",
+        "input": "我今年打算考个PMP证书，提升项目管理能力，考试大概9月，得开始准备了。",
+        "response": "已记下：你今年打算考PMP证书，提升项目管理能力，考试大概在9月，需要开始准备。后续可以帮你梳理备考安排～",
+        "decision": "change",
+        "reason": "主人明确自述今年计划考取PMP证书以提升项目管理能力，考试大概在9月，需要开始准备。这是有持续跟进价值的阶段性目标，应保存为GOAL，时效为temporary，时间表达锚定本轮。",
+        "rule": "2,3",
+        "mode": "llm",
+        "warnings": [],
+        "used_keys": [],
+        "changes": [
+          {
+            "key": "pmp_cert_goal",
+            "label": "PMP证书备考目标",
+            "category": "GOAL",
+            "action": "新增",
+            "before": null,
+            "after": "今年打算考PMP证书，提升项目管理能力，考试大概9月，需开始准备",
+            "status": "ACTIVE",
+            "reason": "主人明确自述阶段性备考目标，有持续跟进价值，保存为GOAL；考试时间仅为大概9月，保留原确定程度，时效temporary。",
+            "rule": "2,3",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "temporary",
+              "reference_turn": 5,
+              "time_text": "今年……考试大概9月",
+              "end_condition": ""
+            }
+          }
+        ],
+        "model_call": {
+          "request_id": "55ed2734-4397-4c25-a070-1021a4187fa0",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:12:19.073648+00:00",
+          "elapsed_seconds": 3.171,
+          "usage": {
+            "prompt_tokens": 10662,
+            "completion_tokens": 472,
+            "total_tokens": 11134,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 5926
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        },
+        "checks": [
+          {
+            "label": "输入来源",
+            "value": "主人本人"
+          },
+          {
+            "label": "决策者",
+            "value": "deepseek-flash"
+          },
+          {
+            "label": "实际操作",
+            "value": "1项变化"
+          }
+        ],
+        "snapshot": [
+          {
+            "id": "rules-comparison:user_name:1",
+            "owner_id": "LIMING",
+            "key": "user_name",
+            "label": "姓名",
+            "category": "FACT",
+            "value": "李明",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我是李明",
+            "reason": "主人明确自述姓名，稳定身份信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:user_age:1",
+            "owner_id": "LIMING",
+            "key": "user_age",
+            "label": "年龄",
+            "category": "FACT",
+            "value": "35岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "今年35岁",
+            "reason": "年龄随时间变化，保留第1轮自述观测口径，不推算当前年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:work_city:1",
+            "owner_id": "LIMING",
+            "key": "work_city",
+            "label": "工作城市",
+            "category": "FACT",
+            "value": "西安",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "工作城市为稳定信息，独立记录便于后续变更。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:employer:1",
+            "owner_id": "LIMING",
+            "key": "employer",
+            "label": "任职公司",
+            "category": "FACT",
+            "value": "西安XX科技",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "任职公司为稳定职业信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:job_title:1",
+            "owner_id": "LIMING",
+            "key": "job_title",
+            "label": "职位",
+            "category": "FACT",
+            "value": "产品经理",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "职位为稳定职业信息，与公司分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:marital_status:1",
+            "owner_id": "LIMING",
+            "key": "marital_status",
+            "label": "婚姻状态",
+            "category": "FACT",
+            "value": "已婚",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "结婚了",
+            "reason": "婚姻状态为稳定家庭信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_relation:1",
+            "owner_id": "LIMING",
+            "key": "daughter_relation",
+            "label": "子女关系",
+            "category": "FACT",
+            "value": "有一个女儿",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "子女关系为稳定家庭信息，独立于年龄与在读阶段。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_age:1",
+            "owner_id": "LIMING",
+            "key": "daughter_age",
+            "label": "女儿年龄",
+            "category": "FACT",
+            "value": "5岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "年龄为观测口径，保留第1轮自述，不自动推算。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_school_stage:1",
+            "owner_id": "LIMING",
+            "key": "daughter_school_stage",
+            "label": "女儿在读阶段",
+            "category": "FACT",
+            "value": "刚上幼儿园",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "刚上幼儿园",
+            "reason": "在读阶段与年龄分开记录，学校变化不自动推出年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_route:2",
+            "owner_id": "LIMING",
+            "key": "commute_route",
+            "label": "通勤路线",
+            "category": "FACT",
+            "value": "每天从长安区开车到高新区上班，走科技路",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我每天从长安区开车到高新区上班，走科技路那边",
+            "reason": "主人明确自述通勤路线，稳定信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_duration:2",
+            "owner_id": "LIMING",
+            "key": "commute_duration",
+            "label": "通勤时长",
+            "category": "FACT",
+            "value": "不堵车约40分钟，早高峰约50分钟",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "不堵车大概40分钟，早高峰一般要50分钟",
+            "reason": "主人明确给出两种情形时长，保留原话确定程度。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:swimming_schedule:2",
+            "owner_id": "LIMING",
+            "key": "swimming_schedule",
+            "label": "游泳安排",
+            "category": "PREFERENCE",
+            "value": "在长安区体育馆办了年卡，每周三晚上去游泳",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我在长安区体育馆办了张年卡，每周三晚上去游泳",
+            "reason": "固定安排，有持续使用价值，用PREFERENCE表示。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "每周三晚上",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:car_maintenance_location:2",
+            "owner_id": "LIMING",
+            "key": "car_maintenance_location",
+            "label": "车辆保养地点",
+            "category": "FACT",
+            "value": "长安区那边的4S店",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "车也是在那边的4S店做保养",
+            "reason": "稳定服务信息，有持续使用价值。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:health_fatty_liver:3",
+            "owner_id": "LIMING",
+            "key": "health_fatty_liver",
+            "label": "健康状况-轻度脂肪肝",
+            "category": "HEALTH",
+            "value": "体检发现轻度脂肪肝",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "医生说我有轻度脂肪肝",
+            "reason": "主人明确自述体检结果，健康事实，有长期参考价值。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:health_advice:3",
+            "owner_id": "LIMING",
+            "key": "health_advice",
+            "label": "健康医嘱",
+            "category": "HEALTH",
+            "value": "控制饮食、少吃油腻、多运动",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "建议控制饮食少吃油腻的，多运动",
+            "reason": "医生明确建议，需持续跟进，与诊断分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:tcm_medication_schedule:3",
+            "owner_id": "LIMING",
+            "key": "tcm_medication_schedule",
+            "label": "中药调理取药安排",
+            "category": "PREFERENCE",
+            "value": "在长安路同仁堂开了调理方子，每周去拿一次药",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "医生还让去长安路同仁堂开了个调理方子，我每周去拿一次药",
+            "reason": "阶段性取药安排，有跟进价值，用PREFERENCE表示；未说明结束条件，按temporary记录。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 3,
+              "time_text": "每周去拿一次药",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:spouse_occupation:4",
+            "owner_id": "LIMING",
+            "key": "spouse_occupation",
+            "label": "配偶职业",
+            "category": "FACT",
+            "value": "在一家设计公司上班，做平面设计",
+            "status": "ACTIVE",
+            "source_turn": 4,
+            "updated_turn": 4,
+            "evidence": "我老婆在一家设计公司上班，做平面设计。",
+            "reason": "主人明确自述配偶职业，稳定家庭信息，独立记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_school_location:4",
+            "owner_id": "LIMING",
+            "key": "daughter_school_location",
+            "label": "女儿幼儿园位置",
+            "category": "FACT",
+            "value": "家附近的幼儿园",
+            "status": "ACTIVE",
+            "source_turn": 4,
+            "updated_turn": 4,
+            "evidence": "我女儿就在我们家附近的幼儿园上学，挺方便的。",
+            "reason": "就读地点与在读阶段分开记录，不覆盖已有“刚上幼儿园”阶段事实。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_art_class:4",
+            "owner_id": "LIMING",
+            "key": "daughter_art_class",
+            "label": "女儿美术启蒙班安排",
+            "category": "PREFERENCE",
+            "value": "在幼儿园旁边报了美术启蒙班，每周六下午去上",
+            "status": "ACTIVE",
+            "source_turn": 4,
+            "updated_turn": 4,
+            "evidence": "她还在幼儿园旁边报了个美术启蒙班，每周六下午去上。",
+            "reason": "固定课外安排，有持续跟进价值，用PREFERENCE表示。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "每周六下午",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:pmp_cert_goal:5",
+            "owner_id": "LIMING",
+            "key": "pmp_cert_goal",
+            "label": "PMP证书备考目标",
+            "category": "GOAL",
+            "value": "今年打算考PMP证书，提升项目管理能力，考试大概9月，需开始准备",
+            "status": "ACTIVE",
+            "source_turn": 5,
+            "updated_turn": 5,
+            "evidence": "我今年打算考个PMP证书，提升项目管理能力，考试大概9月，得开始准备了。",
+            "reason": "主人明确自述阶段性备考目标，有持续跟进价值，保存为GOAL；考试时间仅为大概9月，保留原确定程度，时效temporary。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 5,
+              "time_text": "今年……考试大概9月",
+              "end_condition": ""
+            }
+          }
+        ]
+      },
+      {
+        "turn": 6,
+        "role": "owner",
+        "speaker": "李明",
+        "input": "小星，跟你说个好消息，我跳槽了！现在在YY网络科技有限公司任高级产品总监，薪资涨了不少。",
+        "response": "恭喜跳槽！已更新：你现在在YY网络科技有限公司任高级产品总监，薪资涨了不少（具体数额未说，只记了上涨方向）。原西安XX科技的产品经理任职已退出当前事实。另外，你原来的通勤路线是“从长安区开车到高新区上班”，工作变动后这条是否还适用？方便的话告诉我新公司的通勤情况，我来更新。",
+        "decision": "change",
+        "reason": "主人明确自述职业变化：跳槽到YY网络科技有限公司任高级产品总监，薪资上涨。依据第2条，任职公司与职位为稳定职业信息，应更新；薪资变化方向明确但未给出具体数额，依据第2条只记录定性方向，不推算金额。依据第3条，新值有效、旧值失效，employer与job_title需覆盖更新。依据第4条，工作变化后需复核依赖原任职地点的旧条目：通勤路线（从长安区到高新区上班）与工作城市（西安）是否仍适用本轮未说明，应转REVIEW；游泳安排、车辆保养地点、女儿幼儿园及美术班、中药取药安排均与工作变动无直接依赖，保留。",
+        "rule": "2,3,4",
+        "mode": "llm",
+        "warnings": [],
+        "used_keys": [
+          "employer",
+          "job_title",
+          "commute_route",
+          "work_city"
+        ],
+        "changes": [
+          {
+            "key": "employer",
+            "label": "任职公司",
+            "category": "FACT",
+            "action": "更新",
+            "before": "西安XX科技",
+            "after": "YY网络科技有限公司",
+            "status": "ACTIVE",
+            "reason": "主人明确自述新任职公司，依据第3条新值有效、旧值失效。",
+            "rule": "2,3",
+            "before_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            },
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 6,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "job_title",
+            "label": "职位",
+            "category": "FACT",
+            "action": "更新",
+            "before": "产品经理",
+            "after": "高级产品总监",
+            "status": "ACTIVE",
+            "reason": "主人明确自述新职位，依据第3条新值有效、旧值失效。",
+            "rule": "2,3",
+            "before_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            },
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 6,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "salary_trend",
+            "label": "薪资变化方向",
+            "category": "FACT",
+            "action": "新增",
+            "before": null,
+            "after": "跳槽后薪资涨了不少（未说明具体数额）",
+            "status": "ACTIVE",
+            "reason": "依据第2条，薪酬变化方向明确，有长期参考价值；不推算未说出的金额或区间。",
+            "rule": "2",
+            "before_validity": null,
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 6,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "commute_route",
+            "label": "通勤路线",
+            "category": "FACT",
+            "action": "待确认",
+            "before": "每天从长安区开车到高新区上班，走科技路",
+            "after": "每天从长安区开车到高新区上班，走科技路",
+            "status": "REVIEW",
+            "reason": "依据第4条，工作变化后原通勤路线是否仍适用未知，转REVIEW。",
+            "rule": "4",
+            "before_validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            },
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "key": "work_city",
+            "label": "工作城市",
+            "category": "FACT",
+            "action": "待确认",
+            "before": "西安",
+            "after": "西安",
+            "status": "REVIEW",
+            "reason": "依据第4条，工作变化后工作城市是否仍为西安未知，转REVIEW。",
+            "rule": "4",
+            "before_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            },
+            "after_validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          }
+        ],
+        "model_call": {
+          "request_id": "a9b0637b-43c1-485a-a135-f6dcc08b4608",
+          "provider_url": "https://api.deepseek.com",
+          "model": "deepseek-flash",
+          "requested_model": "deepseek-flash",
+          "started_at": "2026-10-16T02:13:55.446307+00:00",
+          "elapsed_seconds": 7.217,
+          "usage": {
+            "prompt_tokens": 11120,
+            "completion_tokens": 1415,
+            "total_tokens": 12535,
+            "prompt_tokens_details": {
+              "cached_tokens": 10880
+            },
+            "prompt_cache_hit_tokens": 10880,
+            "prompt_cache_miss_tokens": 240
+          },
+          "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+          "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+          "stage": "plan",
+          "request_count": 1,
+          "format_repairs": 0
+        },
+        "checks": [
+          {
+            "label": "输入来源",
+            "value": "主人本人"
+          },
+          {
+            "label": "决策者",
+            "value": "deepseek-flash"
+          },
+          {
+            "label": "实际操作",
+            "value": "5项变化"
+          }
+        ],
+        "snapshot": [
+          {
+            "id": "rules-comparison:user_name:1",
+            "owner_id": "LIMING",
+            "key": "user_name",
+            "label": "姓名",
+            "category": "FACT",
+            "value": "李明",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我是李明",
+            "reason": "主人明确自述姓名，稳定身份信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:user_age:1",
+            "owner_id": "LIMING",
+            "key": "user_age",
+            "label": "年龄",
+            "category": "FACT",
+            "value": "35岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "今年35岁",
+            "reason": "年龄随时间变化，保留第1轮自述观测口径，不推算当前年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:work_city:1",
+            "owner_id": "LIMING",
+            "key": "work_city",
+            "label": "工作城市",
+            "category": "FACT",
+            "value": "西安",
+            "status": "REVIEW",
+            "source_turn": 1,
+            "updated_turn": 6,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "依据第4条，工作变化后工作城市是否仍为西安未知，转REVIEW。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:employer:1",
+            "owner_id": "LIMING",
+            "key": "employer",
+            "label": "任职公司",
+            "category": "FACT",
+            "value": "西安XX科技",
+            "status": "SUPERSEDED",
+            "source_turn": 1,
+            "updated_turn": 6,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "任职公司为稳定职业信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:job_title:1",
+            "owner_id": "LIMING",
+            "key": "job_title",
+            "label": "职位",
+            "category": "FACT",
+            "value": "产品经理",
+            "status": "SUPERSEDED",
+            "source_turn": 1,
+            "updated_turn": 6,
+            "evidence": "我在西安XX科技做产品经理",
+            "reason": "职位为稳定职业信息，与公司分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:marital_status:1",
+            "owner_id": "LIMING",
+            "key": "marital_status",
+            "label": "婚姻状态",
+            "category": "FACT",
+            "value": "已婚",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "结婚了",
+            "reason": "婚姻状态为稳定家庭信息。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_relation:1",
+            "owner_id": "LIMING",
+            "key": "daughter_relation",
+            "label": "子女关系",
+            "category": "FACT",
+            "value": "有一个女儿",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "子女关系为稳定家庭信息，独立于年龄与在读阶段。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_age:1",
+            "owner_id": "LIMING",
+            "key": "daughter_age",
+            "label": "女儿年龄",
+            "category": "FACT",
+            "value": "5岁（第1轮自述）",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "有个女儿5岁",
+            "reason": "年龄为观测口径，保留第1轮自述，不自动推算。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_school_stage:1",
+            "owner_id": "LIMING",
+            "key": "daughter_school_stage",
+            "label": "女儿在读阶段",
+            "category": "FACT",
+            "value": "刚上幼儿园",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "刚上幼儿园",
+            "reason": "在读阶段与年龄分开记录，学校变化不自动推出年龄。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_route:2",
+            "owner_id": "LIMING",
+            "key": "commute_route",
+            "label": "通勤路线",
+            "category": "FACT",
+            "value": "每天从长安区开车到高新区上班，走科技路",
+            "status": "REVIEW",
+            "source_turn": 2,
+            "updated_turn": 6,
+            "evidence": "我每天从长安区开车到高新区上班，走科技路那边",
+            "reason": "依据第4条，工作变化后原通勤路线是否仍适用未知，转REVIEW。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:commute_duration:2",
+            "owner_id": "LIMING",
+            "key": "commute_duration",
+            "label": "通勤时长",
+            "category": "FACT",
+            "value": "不堵车约40分钟，早高峰约50分钟",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "不堵车大概40分钟，早高峰一般要50分钟",
+            "reason": "主人明确给出两种情形时长，保留原话确定程度。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:swimming_schedule:2",
+            "owner_id": "LIMING",
+            "key": "swimming_schedule",
+            "label": "游泳安排",
+            "category": "PREFERENCE",
+            "value": "在长安区体育馆办了年卡，每周三晚上去游泳",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我在长安区体育馆办了张年卡，每周三晚上去游泳",
+            "reason": "固定安排，有持续使用价值，用PREFERENCE表示。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "每周三晚上",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:car_maintenance_location:2",
+            "owner_id": "LIMING",
+            "key": "car_maintenance_location",
+            "label": "车辆保养地点",
+            "category": "FACT",
+            "value": "长安区那边的4S店",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "车也是在那边的4S店做保养",
+            "reason": "稳定服务信息，有持续使用价值。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:health_fatty_liver:3",
+            "owner_id": "LIMING",
+            "key": "health_fatty_liver",
+            "label": "健康状况-轻度脂肪肝",
+            "category": "HEALTH",
+            "value": "体检发现轻度脂肪肝",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "医生说我有轻度脂肪肝",
+            "reason": "主人明确自述体检结果，健康事实，有长期参考价值。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:health_advice:3",
+            "owner_id": "LIMING",
+            "key": "health_advice",
+            "label": "健康医嘱",
+            "category": "HEALTH",
+            "value": "控制饮食、少吃油腻、多运动",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "建议控制饮食少吃油腻的，多运动",
+            "reason": "医生明确建议，需持续跟进，与诊断分开记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 3,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:tcm_medication_schedule:3",
+            "owner_id": "LIMING",
+            "key": "tcm_medication_schedule",
+            "label": "中药调理取药安排",
+            "category": "PREFERENCE",
+            "value": "在长安路同仁堂开了调理方子，每周去拿一次药",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "医生还让去长安路同仁堂开了个调理方子，我每周去拿一次药",
+            "reason": "阶段性取药安排，有跟进价值，用PREFERENCE表示；未说明结束条件，按temporary记录。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 3,
+              "time_text": "每周去拿一次药",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:spouse_occupation:4",
+            "owner_id": "LIMING",
+            "key": "spouse_occupation",
+            "label": "配偶职业",
+            "category": "FACT",
+            "value": "在一家设计公司上班，做平面设计",
+            "status": "ACTIVE",
+            "source_turn": 4,
+            "updated_turn": 4,
+            "evidence": "我老婆在一家设计公司上班，做平面设计。",
+            "reason": "主人明确自述配偶职业，稳定家庭信息，独立记录。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_school_location:4",
+            "owner_id": "LIMING",
+            "key": "daughter_school_location",
+            "label": "女儿幼儿园位置",
+            "category": "FACT",
+            "value": "家附近的幼儿园",
+            "status": "ACTIVE",
+            "source_turn": 4,
+            "updated_turn": 4,
+            "evidence": "我女儿就在我们家附近的幼儿园上学，挺方便的。",
+            "reason": "就读地点与在读阶段分开记录，不覆盖已有“刚上幼儿园”阶段事实。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:daughter_art_class:4",
+            "owner_id": "LIMING",
+            "key": "daughter_art_class",
+            "label": "女儿美术启蒙班安排",
+            "category": "PREFERENCE",
+            "value": "在幼儿园旁边报了美术启蒙班，每周六下午去上",
+            "status": "ACTIVE",
+            "source_turn": 4,
+            "updated_turn": 4,
+            "evidence": "她还在幼儿园旁边报了个美术启蒙班，每周六下午去上。",
+            "reason": "固定课外安排，有持续跟进价值，用PREFERENCE表示。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 4,
+              "time_text": "每周六下午",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:pmp_cert_goal:5",
+            "owner_id": "LIMING",
+            "key": "pmp_cert_goal",
+            "label": "PMP证书备考目标",
+            "category": "GOAL",
+            "value": "今年打算考PMP证书，提升项目管理能力，考试大概9月，需开始准备",
+            "status": "ACTIVE",
+            "source_turn": 5,
+            "updated_turn": 5,
+            "evidence": "我今年打算考个PMP证书，提升项目管理能力，考试大概9月，得开始准备了。",
+            "reason": "主人明确自述阶段性备考目标，有持续跟进价值，保存为GOAL；考试时间仅为大概9月，保留原确定程度，时效temporary。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 5,
+              "time_text": "今年……考试大概9月",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:employer:6",
+            "owner_id": "LIMING",
+            "key": "employer",
+            "label": "任职公司",
+            "category": "FACT",
+            "value": "YY网络科技有限公司",
+            "status": "ACTIVE",
+            "source_turn": 6,
+            "updated_turn": 6,
+            "evidence": "现在在YY网络科技有限公司任高级产品总监",
+            "reason": "主人明确自述新任职公司，依据第3条新值有效、旧值失效。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 6,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:job_title:6",
+            "owner_id": "LIMING",
+            "key": "job_title",
+            "label": "职位",
+            "category": "FACT",
+            "value": "高级产品总监",
+            "status": "ACTIVE",
+            "source_turn": 6,
+            "updated_turn": 6,
+            "evidence": "现在在YY网络科技有限公司任高级产品总监",
+            "reason": "主人明确自述新职位，依据第3条新值有效、旧值失效。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 6,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "rules-comparison:salary_trend:6",
+            "owner_id": "LIMING",
+            "key": "salary_trend",
+            "label": "薪资变化方向",
+            "category": "FACT",
+            "value": "跳槽后薪资涨了不少（未说明具体数额）",
+            "status": "ACTIVE",
+            "source_turn": 6,
+            "updated_turn": 6,
+            "evidence": "薪资涨了不少",
+            "reason": "依据第2条，薪酬变化方向明确，有长期参考价值；不推算未说出的金额或区间。",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 6,
+              "time_text": "",
+              "end_condition": ""
+            }
+          }
+        ]
+      }
+    ],
+    "created_at": "2026-10-16T02:11:35.066808+00:00",
+    "engine": "llm-v2"
+  },
+  "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+  "protocol_sha256": "cceb428bb421debb1c256095354e838b2f64e1e8f8b4d41a4291f24144317137",
+  "official_input_sha256": "d2e2caa2e84345f3e40424bc290af957381fdd498daca355dddf2d79b43b4f74",
+  "source_sha256": {
+    "engine.py": "f57106d8c5e28d1e4ea6ac5046db40ffbd8e926e2cce22ea97b86901cb18cc98",
+    "model.py": "cef817323d0cf9a96dae023426af288896188eba81c38fd570de441f17f774f4"
+  },
+  "saved_turns": 6,
+  "api_requests": 12,
+  "provider_request_ids": 12,
+  "failed_attempts": 3,
+  "known_usage": {
+    "prompt_tokens": 128165,
+    "completion_tokens": 15867,
+    "total_tokens": 144032
+  },
+  "usage_missing_calls": 0,
+  "stopped_at": "2026-10-16T10:15:59.019106+08:00"
+}

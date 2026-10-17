@@ -1,0 +1,1033 @@
+{
+  "variant": "candidate_final",
+  "status": "finished",
+  "started_at": "2026-10-15T16:45:08.597156+00:00",
+  "corpus_sha256": "f81d2697dfaec43cdc941a7b550003facfa9472961859cbb516a132543e79e0c",
+  "corpus_version": "eval-v1",
+  "rules_title": "# 守忆 · 角色记忆守则 v2.3.2",
+  "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+  "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+  "source_sha256": {
+    "engine.py": "0094066cd996e8108eb544848358d3c48167588c0dad0c76b7d15459ffc9986b",
+    "model.py": "50ae666d0194e43d8b35fd4a423a22dbb6be4e81d9162d5ace33abcb9bcd0d5d"
+  },
+  "model": {
+    "enabled": true,
+    "configured": true,
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "engine": "llm-v2"
+  },
+  "temperature": 0,
+  "retry_limit": 0,
+  "planned_cases": 3,
+  "planned_turns": 9,
+  "cases": [
+    {
+      "id": "D03",
+      "planned_turns": 3,
+      "steps": [
+        {
+          "turn": 1,
+          "status": "failed",
+          "error": "模型复核后的决策未通过校验：模型返回字段不符合约定：response",
+          "calls": [
+            {
+              "request_id": "eed96d19-8d9b-485b-b180-cca4ee2c23d2",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:08.600395+00:00",
+              "elapsed_seconds": 2.674,
+              "usage": {
+                "prompt_tokens": 5327,
+                "completion_tokens": 533,
+                "total_tokens": 5860,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "prompt_cache_hit_tokens": 0,
+                "prompt_cache_miss_tokens": 5327
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "plan"
+            },
+            {
+              "request_id": "ae244b3e-d2dc-47a7-beb8-af46da6181ed",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:11.274618+00:00",
+              "elapsed_seconds": 2.215,
+              "usage": {
+                "prompt_tokens": 6290,
+                "completion_tokens": 439,
+                "total_tokens": 6729,
+                "prompt_tokens_details": {
+                  "cached_tokens": 5248
+                },
+                "prompt_cache_hit_tokens": 5248,
+                "prompt_cache_miss_tokens": 1042
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "status": "blocked_by_previous_failure",
+          "calls": []
+        },
+        {
+          "turn": 3,
+          "status": "blocked_by_previous_failure",
+          "calls": []
+        }
+      ],
+      "workspace": {
+        "id": "eval-candidate_final-D03",
+        "title": "D03",
+        "kind": "sandbox",
+        "owner_id": "LIMING",
+        "owner_name": "李明",
+        "records": [],
+        "turns": [],
+        "created_at": "2026-10-15T16:45:08.599643+00:00",
+        "engine": "llm-v2"
+      }
+    },
+    {
+      "id": "D04",
+      "planned_turns": 3,
+      "steps": [
+        {
+          "turn": 1,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "1abcac51-d454-4b87-87ec-58fa622f22bf",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:13.491863+00:00",
+              "elapsed_seconds": 2.116,
+              "usage": {
+                "prompt_tokens": 5321,
+                "completion_tokens": 325,
+                "total_tokens": 5646,
+                "prompt_tokens_details": {
+                  "cached_tokens": 5120
+                },
+                "prompt_cache_hit_tokens": 5120,
+                "prompt_cache_miss_tokens": 201
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "plan"
+            },
+            {
+              "request_id": "f4892d9d-8bb6-408c-9a8d-a3d239b801c3",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:15.608689+00:00",
+              "elapsed_seconds": 1.9,
+              "usage": {
+                "prompt_tokens": 5880,
+                "completion_tokens": 292,
+                "total_tokens": 6172,
+                "prompt_tokens_details": {
+                  "cached_tokens": 5248
+                },
+                "prompt_cache_hit_tokens": 5248,
+                "prompt_cache_miss_tokens": 632
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "status": "failed",
+          "error": "模型复核后的决策未通过校验：模型返回字段不符合约定：response",
+          "calls": [
+            {
+              "request_id": "481cbfc7-54af-47cd-b7d1-e99f5902b727",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:17.509239+00:00",
+              "elapsed_seconds": 3.201,
+              "usage": {
+                "prompt_tokens": 5655,
+                "completion_tokens": 500,
+                "total_tokens": 6155,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 663
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "plan"
+            },
+            {
+              "request_id": "a5eb5955-c18b-4293-86aa-2cb6c46d9363",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:20.711124+00:00",
+              "elapsed_seconds": 2.06,
+              "usage": {
+                "prompt_tokens": 6403,
+                "completion_tokens": 410,
+                "total_tokens": 6813,
+                "prompt_tokens_details": {
+                  "cached_tokens": 5632
+                },
+                "prompt_cache_hit_tokens": 5632,
+                "prompt_cache_miss_tokens": 771
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "status": "blocked_by_previous_failure",
+          "calls": []
+        }
+      ],
+      "workspace": {
+        "id": "eval-candidate_final-D04",
+        "title": "D04",
+        "kind": "sandbox",
+        "owner_id": "LIMING",
+        "owner_name": "李明",
+        "records": [
+          {
+            "id": "eval-candidate_final-D04:drink_preference_black_tea:1",
+            "owner_id": "LIMING",
+            "key": "drink_preference_black_tea",
+            "label": "饮品偏好",
+            "category": "PREFERENCE",
+            "value": "平时喜欢喝红茶",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "记住我平时喜欢喝红茶。",
+            "reason": "主人本人明确陈述的稳定饮品偏好，长期适用",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "平时",
+              "end_condition": ""
+            }
+          }
+        ],
+        "turns": [
+          {
+            "turn": 1,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "记住我平时喜欢喝红茶。",
+            "response": "好的，已记下你平时喜欢喝红茶。",
+            "decision": "change",
+            "reason": "主人本人明确陈述稳定饮品偏好“平时喜欢喝红茶”，属于长期有效的个人偏好，具有保存价值，写入一条PREFERENCE。无关联旧条目需要复核，无临时事项期限需检查。",
+            "rule": "2",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [],
+            "changes": [
+              {
+                "key": "drink_preference_black_tea",
+                "label": "饮品偏好",
+                "category": "PREFERENCE",
+                "action": "新增",
+                "before": null,
+                "after": "平时喜欢喝红茶",
+                "status": "ACTIVE",
+                "reason": "主人本人明确陈述的稳定饮品偏好，长期适用",
+                "rule": "2",
+                "before_validity": null,
+                "after_validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "平时",
+                  "end_condition": ""
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "f4892d9d-8bb6-408c-9a8d-a3d239b801c3",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:13.491863+00:00",
+              "elapsed_seconds": 4.016,
+              "usage": {
+                "prompt_tokens": 11201,
+                "completion_tokens": 617,
+                "total_tokens": 11818,
+                "prompt_cache_hit_tokens": 10368,
+                "prompt_cache_miss_tokens": 833
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review",
+              "request_count": 2,
+              "stages": [
+                {
+                  "request_id": "1abcac51-d454-4b87-87ec-58fa622f22bf",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:45:13.491863+00:00",
+                  "elapsed_seconds": 2.116,
+                  "usage": {
+                    "prompt_tokens": 5321,
+                    "completion_tokens": 325,
+                    "total_tokens": 5646,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 5120
+                    },
+                    "prompt_cache_hit_tokens": 5120,
+                    "prompt_cache_miss_tokens": 201
+                  },
+                  "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+                  "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+                  "stage": "plan"
+                },
+                {
+                  "request_id": "f4892d9d-8bb6-408c-9a8d-a3d239b801c3",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:45:15.608689+00:00",
+                  "elapsed_seconds": 1.9,
+                  "usage": {
+                    "prompt_tokens": 5880,
+                    "completion_tokens": 292,
+                    "total_tokens": 6172,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 5248
+                    },
+                    "prompt_cache_hit_tokens": 5248,
+                    "prompt_cache_miss_tokens": 632
+                  },
+                  "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+                  "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+                  "stage": "review"
+                }
+              ],
+              "review_verdict": "accept"
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "1项变化"
+              },
+              {
+                "label": "模型复核",
+                "value": "复核后提交"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_final-D04:drink_preference_black_tea:1",
+                "owner_id": "LIMING",
+                "key": "drink_preference_black_tea",
+                "label": "饮品偏好",
+                "category": "PREFERENCE",
+                "value": "平时喜欢喝红茶",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "记住我平时喜欢喝红茶。",
+                "reason": "主人本人明确陈述的稳定饮品偏好，长期适用",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "平时",
+                  "end_condition": ""
+                }
+              }
+            ]
+          }
+        ],
+        "created_at": "2026-10-15T16:45:13.491689+00:00",
+        "engine": "llm-v2"
+      }
+    },
+    {
+      "id": "D12",
+      "planned_turns": 3,
+      "steps": [
+        {
+          "turn": 1,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "a4795f0e-7de5-43f8-bb43-d6772f32d267",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:22.773672+00:00",
+              "elapsed_seconds": 2.604,
+              "usage": {
+                "prompt_tokens": 5331,
+                "completion_tokens": 420,
+                "total_tokens": 5751,
+                "prompt_tokens_details": {
+                  "cached_tokens": 5120
+                },
+                "prompt_cache_hit_tokens": 5120,
+                "prompt_cache_miss_tokens": 211
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "plan"
+            },
+            {
+              "request_id": "d9f87c49-a5a0-475e-9311-63cd1352ad1c",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:25.377802+00:00",
+              "elapsed_seconds": 2.228,
+              "usage": {
+                "prompt_tokens": 6035,
+                "completion_tokens": 378,
+                "total_tokens": 6413,
+                "prompt_tokens_details": {
+                  "cached_tokens": 5248
+                },
+                "prompt_cache_hit_tokens": 5248,
+                "prompt_cache_miss_tokens": 787
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "0a9a42bd-4888-4be7-89d8-8e9ce0757467",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:27.606098+00:00",
+              "elapsed_seconds": 2.295,
+              "usage": {
+                "prompt_tokens": 5727,
+                "completion_tokens": 329,
+                "total_tokens": 6056,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 735
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "plan"
+            },
+            {
+              "request_id": "0abf9c45-c8a0-4d55-a903-cd6e19951593",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:29.901227+00:00",
+              "elapsed_seconds": 2.088,
+              "usage": {
+                "prompt_tokens": 6396,
+                "completion_tokens": 273,
+                "total_tokens": 6669,
+                "prompt_tokens_details": {
+                  "cached_tokens": 5632
+                },
+                "prompt_cache_hit_tokens": 5632,
+                "prompt_cache_miss_tokens": 764
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "cf4ed25b-ea9c-465b-87f1-589e1c56ec85",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:31.989727+00:00",
+              "elapsed_seconds": 3.304,
+              "usage": {
+                "prompt_tokens": 5988,
+                "completion_tokens": 475,
+                "total_tokens": 6463,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 996
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "plan"
+            },
+            {
+              "request_id": "f06d24e8-5cbb-455d-bae1-686385b3a821",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:35.294110+00:00",
+              "elapsed_seconds": 2.602,
+              "usage": {
+                "prompt_tokens": 6787,
+                "completion_tokens": 396,
+                "total_tokens": 7183,
+                "prompt_tokens_details": {
+                  "cached_tokens": 5888
+                },
+                "prompt_cache_hit_tokens": 5888,
+                "prompt_cache_miss_tokens": 899
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review"
+            }
+          ]
+        }
+      ],
+      "workspace": {
+        "id": "eval-candidate_final-D12",
+        "title": "D12",
+        "kind": "sandbox",
+        "owner_id": "LIMING",
+        "owner_name": "李明",
+        "records": [
+          {
+            "id": "eval-candidate_final-D12:translation_draft_task:1",
+            "owner_id": "LIMING",
+            "key": "translation_draft_task",
+            "label": "翻译稿整理与发送任务",
+            "category": "GOAL",
+            "value": "本周先整理翻译稿，之后发给编辑，是需要跟进的任务。",
+            "status": "SUPERSEDED",
+            "source_turn": 1,
+            "updated_turn": 3,
+            "evidence": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+            "reason": "主人明确暂缓该跟进任务且后续未定，原任务保留但当前是否继续执行不确定，转REVIEW。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 1,
+              "time_text": "这周",
+              "end_condition": "发给编辑"
+            }
+          },
+          {
+            "id": "eval-candidate_final-D12:translation_draft_task:3",
+            "owner_id": "LIMING",
+            "key": "translation_draft_task",
+            "label": "翻译稿整理与发送任务",
+            "category": "GOAL",
+            "value": "下周继续整理翻译稿，之后发给编辑，是需要跟进的任务。",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "不是取消，我下周会继续整理，先保留这件事。",
+            "reason": "主人明确表示不取消并给出新的继续执行时间，原暂缓状态解除，任务恢复为当前可执行事项。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 3,
+              "time_text": "下周",
+              "end_condition": "发给编辑"
+            }
+          }
+        ],
+        "turns": [
+          {
+            "turn": 1,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+            "response": "已记下：本周先整理翻译稿，之后发给编辑，作为需要跟进的任务。",
+            "decision": "change",
+            "reason": "主人明确交办一项需要后续执行的临时任务：本周整理翻译稿，之后发给编辑。该事项有明确跟进价值，应保存为临时事项，时间表达“这周”锚定本轮，结束条件为发给编辑。无其他稳定事实或关联旧条目需要处理。",
+            "rule": "2",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [],
+            "changes": [
+              {
+                "key": "translation_draft_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "action": "新增",
+                "before": null,
+                "after": "本周先整理翻译稿，之后发给编辑，是需要跟进的任务。",
+                "status": "ACTIVE",
+                "reason": "主人明确交办的临时跟进任务，有后续执行价值，时间表达与结束条件均来自原话。",
+                "rule": "2",
+                "before_validity": null,
+                "after_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "d9f87c49-a5a0-475e-9311-63cd1352ad1c",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:22.773672+00:00",
+              "elapsed_seconds": 4.832,
+              "usage": {
+                "prompt_tokens": 11366,
+                "completion_tokens": 798,
+                "total_tokens": 12164,
+                "prompt_cache_hit_tokens": 10368,
+                "prompt_cache_miss_tokens": 998
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review",
+              "request_count": 2,
+              "stages": [
+                {
+                  "request_id": "a4795f0e-7de5-43f8-bb43-d6772f32d267",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:45:22.773672+00:00",
+                  "elapsed_seconds": 2.604,
+                  "usage": {
+                    "prompt_tokens": 5331,
+                    "completion_tokens": 420,
+                    "total_tokens": 5751,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 5120
+                    },
+                    "prompt_cache_hit_tokens": 5120,
+                    "prompt_cache_miss_tokens": 211
+                  },
+                  "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+                  "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+                  "stage": "plan"
+                },
+                {
+                  "request_id": "d9f87c49-a5a0-475e-9311-63cd1352ad1c",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:45:25.377802+00:00",
+                  "elapsed_seconds": 2.228,
+                  "usage": {
+                    "prompt_tokens": 6035,
+                    "completion_tokens": 378,
+                    "total_tokens": 6413,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 5248
+                    },
+                    "prompt_cache_hit_tokens": 5248,
+                    "prompt_cache_miss_tokens": 787
+                  },
+                  "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+                  "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+                  "stage": "review"
+                }
+              ],
+              "review_verdict": "accept"
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "1项变化"
+              },
+              {
+                "label": "模型复核",
+                "value": "复核后提交"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_final-D12:translation_draft_task:1",
+                "owner_id": "LIMING",
+                "key": "translation_draft_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "value": "本周先整理翻译稿，之后发给编辑，是需要跟进的任务。",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+                "reason": "主人明确交办的临时跟进任务，有后续执行价值，时间表达与结束条件均来自原话。",
+                "validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ]
+          },
+          {
+            "turn": 2,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "稿子先放一放，别急，我还没有想好后面怎么办。",
+            "response": "好的，那翻译稿的事先放一放，我不催你。等你后面想好了怎么处理，再告诉我，我再接着跟进。",
+            "decision": "change",
+            "reason": "主人表示翻译稿先放一放、尚未想好后续怎么办，属于对原跟进任务的暂缓而非明确取消，依守则第5条保留原任务并转为REVIEW，不执行forget；本轮无其他稳定事实可写入。",
+            "rule": "5",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [
+              "translation_draft_task"
+            ],
+            "changes": [
+              {
+                "key": "translation_draft_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "action": "待确认",
+                "before": "本周先整理翻译稿，之后发给编辑，是需要跟进的任务。",
+                "after": "本周先整理翻译稿，之后发给编辑，是需要跟进的任务。",
+                "status": "REVIEW",
+                "reason": "主人明确暂缓该跟进任务且后续未定，原任务保留但当前是否继续执行不确定，转REVIEW。",
+                "rule": "5",
+                "before_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                },
+                "after_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "0abf9c45-c8a0-4d55-a903-cd6e19951593",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:27.606098+00:00",
+              "elapsed_seconds": 4.383,
+              "usage": {
+                "prompt_tokens": 12123,
+                "completion_tokens": 602,
+                "total_tokens": 12725,
+                "prompt_cache_hit_tokens": 10624,
+                "prompt_cache_miss_tokens": 1499
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review",
+              "request_count": 2,
+              "stages": [
+                {
+                  "request_id": "0a9a42bd-4888-4be7-89d8-8e9ce0757467",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:45:27.606098+00:00",
+                  "elapsed_seconds": 2.295,
+                  "usage": {
+                    "prompt_tokens": 5727,
+                    "completion_tokens": 329,
+                    "total_tokens": 6056,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 4992
+                    },
+                    "prompt_cache_hit_tokens": 4992,
+                    "prompt_cache_miss_tokens": 735
+                  },
+                  "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+                  "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+                  "stage": "plan"
+                },
+                {
+                  "request_id": "0abf9c45-c8a0-4d55-a903-cd6e19951593",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:45:29.901227+00:00",
+                  "elapsed_seconds": 2.088,
+                  "usage": {
+                    "prompt_tokens": 6396,
+                    "completion_tokens": 273,
+                    "total_tokens": 6669,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 5632
+                    },
+                    "prompt_cache_hit_tokens": 5632,
+                    "prompt_cache_miss_tokens": 764
+                  },
+                  "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+                  "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+                  "stage": "review"
+                }
+              ],
+              "review_verdict": "accept"
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "1项变化"
+              },
+              {
+                "label": "模型复核",
+                "value": "复核后提交"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_final-D12:translation_draft_task:1",
+                "owner_id": "LIMING",
+                "key": "translation_draft_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "value": "本周先整理翻译稿，之后发给编辑，是需要跟进的任务。",
+                "status": "REVIEW",
+                "source_turn": 1,
+                "updated_turn": 2,
+                "evidence": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+                "reason": "主人明确暂缓该跟进任务且后续未定，原任务保留但当前是否继续执行不确定，转REVIEW。",
+                "validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ]
+          },
+          {
+            "turn": 3,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "不是取消，我下周会继续整理，先保留这件事。",
+            "response": "好的，翻译稿的事不取消，先保留着。我记下你下周会继续整理，之后发给编辑，到时再接着跟进。",
+            "decision": "change",
+            "reason": "主人明确表示不是取消、下周会继续整理并先保留该事项，属于对已有暂缓跟进任务的明确恢复与继续执行说明。应沿用原事项translation_draft_task，保留未被撤销的执行对象（整理翻译稿、之后发给编辑），状态由REVIEW恢复为ACTIVE；时间表达由原“这周”更新为本轮新说明的“下周”，故validity的reference_turn锚定本轮，结束条件仍为“发给编辑”。不执行forget，因为主人明确否认取消。",
+            "rule": "5 / 3",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [
+              "translation_draft_task"
+            ],
+            "changes": [
+              {
+                "key": "translation_draft_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "action": "更新",
+                "before": "本周先整理翻译稿，之后发给编辑，是需要跟进的任务。",
+                "after": "下周继续整理翻译稿，之后发给编辑，是需要跟进的任务。",
+                "status": "ACTIVE",
+                "reason": "主人明确表示不取消并给出新的继续执行时间，原暂缓状态解除，任务恢复为当前可执行事项。",
+                "rule": "5 / 3",
+                "before_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                },
+                "after_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 3,
+                  "time_text": "下周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "f06d24e8-5cbb-455d-bae1-686385b3a821",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:45:31.989727+00:00",
+              "elapsed_seconds": 5.906,
+              "usage": {
+                "prompt_tokens": 12775,
+                "completion_tokens": 871,
+                "total_tokens": 13646,
+                "prompt_cache_hit_tokens": 10880,
+                "prompt_cache_miss_tokens": 1895
+              },
+              "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+              "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+              "stage": "review",
+              "request_count": 2,
+              "stages": [
+                {
+                  "request_id": "cf4ed25b-ea9c-465b-87f1-589e1c56ec85",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:45:31.989727+00:00",
+                  "elapsed_seconds": 3.304,
+                  "usage": {
+                    "prompt_tokens": 5988,
+                    "completion_tokens": 475,
+                    "total_tokens": 6463,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 4992
+                    },
+                    "prompt_cache_hit_tokens": 4992,
+                    "prompt_cache_miss_tokens": 996
+                  },
+                  "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+                  "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+                  "stage": "plan"
+                },
+                {
+                  "request_id": "f06d24e8-5cbb-455d-bae1-686385b3a821",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:45:35.294110+00:00",
+                  "elapsed_seconds": 2.602,
+                  "usage": {
+                    "prompt_tokens": 6787,
+                    "completion_tokens": 396,
+                    "total_tokens": 7183,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 5888
+                    },
+                    "prompt_cache_hit_tokens": 5888,
+                    "prompt_cache_miss_tokens": 899
+                  },
+                  "rules_sha256": "95502bf6f4941d4e5bc9aadccc96599abc9b2dff3bdd2bd0267296f9868fc1e8",
+                  "protocol_sha256": "f92362c29f2cf3d49b24d0db0f271f72eff33a89f66ee4cd570030dcac2255e0",
+                  "stage": "review"
+                }
+              ],
+              "review_verdict": "accept"
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "1项变化"
+              },
+              {
+                "label": "模型复核",
+                "value": "复核后提交"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_final-D12:translation_draft_task:1",
+                "owner_id": "LIMING",
+                "key": "translation_draft_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "value": "本周先整理翻译稿，之后发给编辑，是需要跟进的任务。",
+                "status": "SUPERSEDED",
+                "source_turn": 1,
+                "updated_turn": 3,
+                "evidence": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+                "reason": "主人明确暂缓该跟进任务且后续未定，原任务保留但当前是否继续执行不确定，转REVIEW。",
+                "validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              },
+              {
+                "id": "eval-candidate_final-D12:translation_draft_task:3",
+                "owner_id": "LIMING",
+                "key": "translation_draft_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "value": "下周继续整理翻译稿，之后发给编辑，是需要跟进的任务。",
+                "status": "ACTIVE",
+                "source_turn": 3,
+                "updated_turn": 3,
+                "evidence": "不是取消，我下周会继续整理，先保留这件事。",
+                "reason": "主人明确表示不取消并给出新的继续执行时间，原暂缓状态解除，任务恢复为当前可执行事项。",
+                "validity": {
+                  "kind": "temporary",
+                  "reference_turn": 3,
+                  "time_text": "下周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ]
+          }
+        ],
+        "created_at": "2026-10-15T16:45:22.773475+00:00",
+        "engine": "llm-v2"
+      }
+    }
+  ],
+  "api_attempts_recorded": 12,
+  "finished_at": "2026-10-15T16:45:37.898325+00:00",
+  "saved_turns": 4,
+  "failed_turns": 2,
+  "blocked_turns": 3,
+  "provider_request_ids": 12,
+  "known_usage": {
+    "prompt_tokens": 71140,
+    "completion_tokens": 4770,
+    "total_tokens": 75910
+  },
+  "usage_missing_calls": 0
+}

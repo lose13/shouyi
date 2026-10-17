@@ -1,0 +1,23 @@
+{
+  "run_id": "9912e312fb8a4382981f0cf9ccbfb194",
+  "entry": "actual app HTTP /api/official/start; reset=true",
+  "runtime_protocol_override": false,
+  "message_roles": [
+    "system",
+    "user",
+    "system"
+  ],
+  "prompt_layout": "rules_protocol,context,trusted_final_check",
+  "provider": "https://api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "thinking": "disabled",
+  "temperature": 0,
+  "rules_sha256": "1ba9196c4d39a3cf52776fcb699feaaa4ba7355290f43e682dcb6851a9c221de",
+  "protocol_sha256": "62fdae0f066aaf1868a43d9a1f34935df5b2027c5cd54b383ee34e85dd99cf5c",
+  "source_sha256": {
+    "app.py": "2bcf0057ad9a9275649b78fd099265a5716e942e41e1d368f70e4864799b1711",
+    "model.py": "18770839331d57f1add009a23eccc1f3c41cab7ad4b25e9760befbbe58e6b089",
+    "engine.py": "9c2136e175cc1a0b89029faf09eaa95db7be052c94f48ae536f1c81f1f7c8b50"
+  },
+  "official_input_sha256": "d2e2caa2e84345f3e40424bc290af957381fdd498daca355dddf2d79b43b4f74"
+}

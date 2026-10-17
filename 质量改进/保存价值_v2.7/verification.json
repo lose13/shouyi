@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "complete_28": true,
+    "new_run_id": true,
+    "rules_match_live_and_manifest": true,
+    "source_unchanged": true,
+    "source_matches_baseline": true,
+    "official_input_unchanged": true,
+    "protocol_unchanged": true,
+    "all_call_rules_protocol": true,
+    "all_call_layout": true,
+    "request_ids_distinct_and_complete": true,
+    "nonowner_no_writes": true,
+    "turns_order_and_roles": true,
+    "live_export_from_state": true,
+    "archive_export_identical": true,
+    "live_and_archive_same_state": true,
+    "no_key_in_output": true,
+    "no_full_long_number_in_output": true
+  },
+  "all_passed": true,
+  "semantic_accuracy_verified": false
+}

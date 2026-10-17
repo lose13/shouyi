@@ -1,0 +1,14 @@
+{
+  "production_model_unchanged": true,
+  "production_engine_unchanged": true,
+  "production_rules_unchanged": true,
+  "production_memory_unchanged": true,
+  "production_run_unchanged": true,
+  "gemini_original_unchanged": true,
+  "gemini_completed_28": true,
+  "export_matches_executed_state": true,
+  "incomplete_current_not_exported": true,
+  "unique_request_ids_42": true,
+  "usage_retained_for_all_calls": true,
+  "no_api_key_in_run_artifacts": true
+}

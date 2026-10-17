@@ -1,0 +1,7 @@
+{
+  "kind": "offline boundary checks; no API calls",
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "passed": true
+}

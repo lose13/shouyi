@@ -1,0 +1,1457 @@
+{
+  "variant": "candidate_v24",
+  "status": "finished",
+  "started_at": "2026-10-15T16:48:11.390228+00:00",
+  "corpus_sha256": "f81d2697dfaec43cdc941a7b550003facfa9472961859cbb516a132543e79e0c",
+  "corpus_version": "eval-v1",
+  "rules_title": "# 守忆 · 角色记忆守则 v2.4",
+  "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+  "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+  "source_sha256": {
+    "engine.py": "f57106d8c5e28d1e4ea6ac5046db40ffbd8e926e2cce22ea97b86901cb18cc98",
+    "model.py": "cef817323d0cf9a96dae023426af288896188eba81c38fd570de441f17f774f4"
+  },
+  "model": {
+    "enabled": true,
+    "configured": true,
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "engine": "llm-v2"
+  },
+  "temperature": 0,
+  "retry_limit": 0,
+  "planned_cases": 3,
+  "planned_turns": 9,
+  "cases": [
+    {
+      "id": "D03",
+      "planned_turns": 3,
+      "steps": [
+        {
+          "turn": 1,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "530cff78-1c7b-4861-8360-c59b764346a2",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:11.393551+00:00",
+              "elapsed_seconds": 2.671,
+              "usage": {
+                "prompt_tokens": 5275,
+                "completion_tokens": 510,
+                "total_tokens": 5785,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "prompt_cache_hit_tokens": 0,
+                "prompt_cache_miss_tokens": 5275
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "b8d3ea88-8fc9-4734-af4a-0587dc190202",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:14.065248+00:00",
+              "elapsed_seconds": 3.48,
+              "usage": {
+                "prompt_tokens": 5840,
+                "completion_tokens": 459,
+                "total_tokens": 6299,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 848
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "validation_error": "模型声明变更但没有操作，本轮未保存"
+            },
+            {
+              "request_id": "19d8f2a9-982c-425c-8fd1-2e5316aba167",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:17.545959+00:00",
+              "elapsed_seconds": 2.477,
+              "usage": {
+                "prompt_tokens": 6280,
+                "completion_tokens": 372,
+                "total_tokens": 6652,
+                "prompt_tokens_details": {
+                  "cached_tokens": 5760
+                },
+                "prompt_cache_hit_tokens": 5760,
+                "prompt_cache_miss_tokens": 520
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "repair"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "0d2048f8-d3ee-460f-a829-89c904ee9a83",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:20.024000+00:00",
+              "elapsed_seconds": 2.095,
+              "usage": {
+                "prompt_tokens": 5913,
+                "completion_tokens": 194,
+                "total_tokens": 6107,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 921
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            }
+          ]
+        }
+      ],
+      "workspace": {
+        "id": "eval-candidate_v24-D03",
+        "title": "D03",
+        "kind": "sandbox",
+        "owner_id": "LIMING",
+        "owner_name": "李明",
+        "records": [
+          {
+            "id": "eval-candidate_v24-D03:job_role:1",
+            "owner_id": "LIMING",
+            "key": "job_role",
+            "label": "职业岗位",
+            "category": "FACT",
+            "value": "在仓配中心做调度",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "我在仓配中心做调度",
+            "reason": "主人明确陈述的长期职业身份",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "eval-candidate_v24-D03:monthly_salary:1",
+            "owner_id": "LIMING",
+            "key": "monthly_salary",
+            "label": "当前月薪",
+            "category": "FACT",
+            "value": "当前月薪八千元",
+            "status": "ACTIVE",
+            "source_turn": 1,
+            "updated_turn": 1,
+            "evidence": "当前月薪八千元",
+            "reason": "主人明确陈述的当前薪酬水平",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "当前",
+              "end_condition": ""
+            }
+          }
+        ],
+        "turns": [
+          {
+            "turn": 1,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "我在仓配中心做调度，当前月薪八千元。",
+            "response": "已记下：你在仓配中心做调度，当前月薪八千元。",
+            "decision": "change",
+            "reason": "主人本人明确陈述了职业岗位和当前月薪，属于长期身份与工作信息，具有持续使用价值，应分别建立稳定属性保存。",
+            "rule": "2",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [],
+            "changes": [
+              {
+                "key": "job_role",
+                "label": "职业岗位",
+                "category": "FACT",
+                "action": "新增",
+                "before": null,
+                "after": "在仓配中心做调度",
+                "status": "ACTIVE",
+                "reason": "主人明确陈述的长期职业身份",
+                "rule": "2",
+                "before_validity": null,
+                "after_validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "",
+                  "end_condition": ""
+                }
+              },
+              {
+                "key": "monthly_salary",
+                "label": "当前月薪",
+                "category": "FACT",
+                "action": "新增",
+                "before": null,
+                "after": "当前月薪八千元",
+                "status": "ACTIVE",
+                "reason": "主人明确陈述的当前薪酬水平",
+                "rule": "2",
+                "before_validity": null,
+                "after_validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "当前",
+                  "end_condition": ""
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "530cff78-1c7b-4861-8360-c59b764346a2",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:11.393551+00:00",
+              "elapsed_seconds": 2.671,
+              "usage": {
+                "prompt_tokens": 5275,
+                "completion_tokens": 510,
+                "total_tokens": 5785,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                },
+                "prompt_cache_hit_tokens": 0,
+                "prompt_cache_miss_tokens": 5275
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "2项变化"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_v24-D03:job_role:1",
+                "owner_id": "LIMING",
+                "key": "job_role",
+                "label": "职业岗位",
+                "category": "FACT",
+                "value": "在仓配中心做调度",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "我在仓配中心做调度",
+                "reason": "主人明确陈述的长期职业身份",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "",
+                  "end_condition": ""
+                }
+              },
+              {
+                "id": "eval-candidate_v24-D03:monthly_salary:1",
+                "owner_id": "LIMING",
+                "key": "monthly_salary",
+                "label": "当前月薪",
+                "category": "FACT",
+                "value": "当前月薪八千元",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "当前月薪八千元",
+                "reason": "主人明确陈述的当前薪酬水平",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "当前",
+                  "end_condition": ""
+                }
+              }
+            ]
+          },
+          {
+            "turn": 2,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "朋友说有个月薪一万二的岗位，我没答应，也不打算跟进。别把那个报价当成我的收入。",
+            "response": "明白，那个一万二的岗位报价只是朋友转述，不会记成你的收入；你也不打算跟进，我不会把它当作待办。你之前说的当前月薪八千元仍然保留。",
+            "decision": "ignore",
+            "reason": "本轮主人明确说明朋友转述的月薪一万二岗位报价不是本人收入，且明确表示不打算跟进。该岗位机会从未写入记忆，known_keys中也没有对应属性，按守则第5条不虚构属性执行删除；现有monthly_salary（当前月薪八千元）是主人本人陈述，继续有效，不因转述报价而改动。本轮无新的稳定事实或需保存的临时事项，故不写入。",
+            "rule": "5 / 2",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [
+              "monthly_salary",
+              "job_role"
+            ],
+            "changes": [],
+            "model_call": {
+              "request_id": "19d8f2a9-982c-425c-8fd1-2e5316aba167",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:14.065248+00:00",
+              "elapsed_seconds": 5.957,
+              "usage": {
+                "prompt_tokens": 12120,
+                "completion_tokens": 831,
+                "total_tokens": 12951
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "repair",
+              "request_count": 2,
+              "format_repairs": 1,
+              "stages": [
+                {
+                  "request_id": "b8d3ea88-8fc9-4734-af4a-0587dc190202",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:48:14.065248+00:00",
+                  "elapsed_seconds": 3.48,
+                  "usage": {
+                    "prompt_tokens": 5840,
+                    "completion_tokens": 459,
+                    "total_tokens": 6299,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 4992
+                    },
+                    "prompt_cache_hit_tokens": 4992,
+                    "prompt_cache_miss_tokens": 848
+                  },
+                  "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+                  "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+                  "stage": "plan",
+                  "validation_error": "模型声明变更但没有操作，本轮未保存"
+                },
+                {
+                  "request_id": "19d8f2a9-982c-425c-8fd1-2e5316aba167",
+                  "provider_url": "https://api.deepseek.com",
+                  "model": "deepseek-flash",
+                  "requested_model": "deepseek-flash",
+                  "started_at": "2026-10-15T16:48:17.545959+00:00",
+                  "elapsed_seconds": 2.477,
+                  "usage": {
+                    "prompt_tokens": 6280,
+                    "completion_tokens": 372,
+                    "total_tokens": 6652,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 5760
+                    },
+                    "prompt_cache_hit_tokens": 5760,
+                    "prompt_cache_miss_tokens": 520
+                  },
+                  "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+                  "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+                  "stage": "repair"
+                }
+              ]
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "未改动记忆"
+              },
+              {
+                "label": "格式修正",
+                "value": "模型修正一次后通过校验"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_v24-D03:job_role:1",
+                "owner_id": "LIMING",
+                "key": "job_role",
+                "label": "职业岗位",
+                "category": "FACT",
+                "value": "在仓配中心做调度",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "我在仓配中心做调度",
+                "reason": "主人明确陈述的长期职业身份",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "",
+                  "end_condition": ""
+                }
+              },
+              {
+                "id": "eval-candidate_v24-D03:monthly_salary:1",
+                "owner_id": "LIMING",
+                "key": "monthly_salary",
+                "label": "当前月薪",
+                "category": "FACT",
+                "value": "当前月薪八千元",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "当前月薪八千元",
+                "reason": "主人明确陈述的当前薪酬水平",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "当前",
+                  "end_condition": ""
+                }
+              }
+            ]
+          },
+          {
+            "turn": 3,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "我的月薪还是原来的数，对吧？",
+            "response": "是的，你之前说的当前月薪八千元仍然有效，没有变化。",
+            "decision": "query",
+            "reason": "主人本轮询问月薪是否仍为原来的数，属于对已有记忆的查询。当前有效记忆 monthly_salary 为第1轮主人明确陈述的“当前月薪八千元”，第2轮主人仅澄清朋友转述的一万二岗位报价不是本人收入且不跟进，未改变本人月薪，故该属性仍有效，无需写入或更新。",
+            "rule": "2 / 3",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [
+              "monthly_salary"
+            ],
+            "changes": [],
+            "model_call": {
+              "request_id": "0d2048f8-d3ee-460f-a829-89c904ee9a83",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:20.024000+00:00",
+              "elapsed_seconds": 2.095,
+              "usage": {
+                "prompt_tokens": 5913,
+                "completion_tokens": 194,
+                "total_tokens": 6107,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 921
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "未改动记忆"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_v24-D03:job_role:1",
+                "owner_id": "LIMING",
+                "key": "job_role",
+                "label": "职业岗位",
+                "category": "FACT",
+                "value": "在仓配中心做调度",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "我在仓配中心做调度",
+                "reason": "主人明确陈述的长期职业身份",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "",
+                  "end_condition": ""
+                }
+              },
+              {
+                "id": "eval-candidate_v24-D03:monthly_salary:1",
+                "owner_id": "LIMING",
+                "key": "monthly_salary",
+                "label": "当前月薪",
+                "category": "FACT",
+                "value": "当前月薪八千元",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "当前月薪八千元",
+                "reason": "主人明确陈述的当前薪酬水平",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "当前",
+                  "end_condition": ""
+                }
+              }
+            ]
+          }
+        ],
+        "created_at": "2026-10-15T16:48:11.392802+00:00",
+        "engine": "llm-v2"
+      }
+    },
+    {
+      "id": "D04",
+      "planned_turns": 3,
+      "steps": [
+        {
+          "turn": 1,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "c5cd9c8c-e74d-43bd-be9b-ffa97cb84288",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:22.121153+00:00",
+              "elapsed_seconds": 1.929,
+              "usage": {
+                "prompt_tokens": 5269,
+                "completion_tokens": 327,
+                "total_tokens": 5596,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 277
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "3a09d80d-b1c8-48ca-a2e0-489ab65fd073",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:24.050417+00:00",
+              "elapsed_seconds": 2.851,
+              "usage": {
+                "prompt_tokens": 5607,
+                "completion_tokens": 523,
+                "total_tokens": 6130,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 615
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "d782e361-601d-4868-9896-f330f9ef998e",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:26.902185+00:00",
+              "elapsed_seconds": 1.914,
+              "usage": {
+                "prompt_tokens": 5849,
+                "completion_tokens": 177,
+                "total_tokens": 6026,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 857
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            }
+          ]
+        }
+      ],
+      "workspace": {
+        "id": "eval-candidate_v24-D04",
+        "title": "D04",
+        "kind": "sandbox",
+        "owner_id": "LIMING",
+        "owner_name": "李明",
+        "records": [
+          {
+            "id": "eval-candidate_v24-D04:preference.tea:1",
+            "owner_id": "LIMING",
+            "key": "preference.tea",
+            "label": "饮茶偏好",
+            "category": "PREFERENCE",
+            "value": "平时喜欢喝红茶",
+            "status": "SUPERSEDED",
+            "source_turn": 1,
+            "updated_turn": 2,
+            "evidence": "记住我平时喜欢喝红茶。",
+            "reason": "主人本人明确陈述的稳定偏好，按守则第2条保存为持续适用的偏好条目",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 1,
+              "time_text": "平时",
+              "end_condition": ""
+            }
+          },
+          {
+            "id": "eval-candidate_v24-D04:preference.tea:2",
+            "owner_id": "LIMING",
+            "key": "preference.tea",
+            "label": "饮茶偏好",
+            "category": "PREFERENCE",
+            "value": "长期喝乌龙茶",
+            "status": "ACTIVE",
+            "source_turn": 2,
+            "updated_turn": 2,
+            "evidence": "我长期喝的是乌龙茶，不是红茶",
+            "reason": "主人明确纠错并给出新的当前偏好值，替代原“喜欢喝红茶”，按第3条更新、第5条第5项纠错",
+            "validity": {
+              "kind": "ongoing",
+              "reference_turn": 2,
+              "time_text": "长期",
+              "end_condition": ""
+            }
+          }
+        ],
+        "turns": [
+          {
+            "turn": 1,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "记住我平时喜欢喝红茶。",
+            "response": "好的，已记下你平时喜欢喝红茶。",
+            "decision": "change",
+            "reason": "主人本人明确陈述稳定偏好“平时喜欢喝红茶”，属于有长期使用价值的偏好信息，按守则第2条写入PREFERENCE，时效为持续适用。",
+            "rule": "2",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [],
+            "changes": [
+              {
+                "key": "preference.tea",
+                "label": "饮茶偏好",
+                "category": "PREFERENCE",
+                "action": "新增",
+                "before": null,
+                "after": "平时喜欢喝红茶",
+                "status": "ACTIVE",
+                "reason": "主人本人明确陈述的稳定偏好，按守则第2条保存为持续适用的偏好条目",
+                "rule": "2",
+                "before_validity": null,
+                "after_validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "平时",
+                  "end_condition": ""
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "c5cd9c8c-e74d-43bd-be9b-ffa97cb84288",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:22.121153+00:00",
+              "elapsed_seconds": 1.929,
+              "usage": {
+                "prompt_tokens": 5269,
+                "completion_tokens": 327,
+                "total_tokens": 5596,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 277
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "1项变化"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_v24-D04:preference.tea:1",
+                "owner_id": "LIMING",
+                "key": "preference.tea",
+                "label": "饮茶偏好",
+                "category": "PREFERENCE",
+                "value": "平时喜欢喝红茶",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "记住我平时喜欢喝红茶。",
+                "reason": "主人本人明确陈述的稳定偏好，按守则第2条保存为持续适用的偏好条目",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "平时",
+                  "end_condition": ""
+                }
+              }
+            ]
+          },
+          {
+            "turn": 2,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "刚才说错了，我长期喝的是乌龙茶，不是红茶；不是说我对红茶过敏。",
+            "response": "好的，已更正：你长期喝的是乌龙茶，之前记的红茶已作废。也记下你并不是对红茶过敏。",
+            "decision": "change",
+            "reason": "主人明确指出上一轮口误并给出新值：长期喝的是乌龙茶，不是红茶；同时澄清并非对红茶过敏。按守则第3条与第5条第5项，对同一属性 preference.tea 执行纠错更新，新值“长期喝乌龙茶”有效，旧值“平时喜欢喝红茶”失效。主人未提及任何过敏事实，不新增健康条目。",
+            "rule": "3 / 5",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [
+              "preference.tea"
+            ],
+            "changes": [
+              {
+                "key": "preference.tea",
+                "label": "饮茶偏好",
+                "category": "PREFERENCE",
+                "action": "更新",
+                "before": "平时喜欢喝红茶",
+                "after": "长期喝乌龙茶",
+                "status": "ACTIVE",
+                "reason": "主人明确纠错并给出新的当前偏好值，替代原“喜欢喝红茶”，按第3条更新、第5条第5项纠错",
+                "rule": "3 / 5",
+                "before_validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "平时",
+                  "end_condition": ""
+                },
+                "after_validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 2,
+                  "time_text": "长期",
+                  "end_condition": ""
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "3a09d80d-b1c8-48ca-a2e0-489ab65fd073",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:24.050417+00:00",
+              "elapsed_seconds": 2.851,
+              "usage": {
+                "prompt_tokens": 5607,
+                "completion_tokens": 523,
+                "total_tokens": 6130,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 615
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "1项变化"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_v24-D04:preference.tea:1",
+                "owner_id": "LIMING",
+                "key": "preference.tea",
+                "label": "饮茶偏好",
+                "category": "PREFERENCE",
+                "value": "平时喜欢喝红茶",
+                "status": "SUPERSEDED",
+                "source_turn": 1,
+                "updated_turn": 2,
+                "evidence": "记住我平时喜欢喝红茶。",
+                "reason": "主人本人明确陈述的稳定偏好，按守则第2条保存为持续适用的偏好条目",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "平时",
+                  "end_condition": ""
+                }
+              },
+              {
+                "id": "eval-candidate_v24-D04:preference.tea:2",
+                "owner_id": "LIMING",
+                "key": "preference.tea",
+                "label": "饮茶偏好",
+                "category": "PREFERENCE",
+                "value": "长期喝乌龙茶",
+                "status": "ACTIVE",
+                "source_turn": 2,
+                "updated_turn": 2,
+                "evidence": "我长期喝的是乌龙茶，不是红茶",
+                "reason": "主人明确纠错并给出新的当前偏好值，替代原“喜欢喝红茶”，按第3条更新、第5条第5项纠错",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 2,
+                  "time_text": "长期",
+                  "end_condition": ""
+                }
+              }
+            ]
+          },
+          {
+            "turn": 3,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "以后推荐茶按什么偏好？",
+            "response": "按你目前的偏好，以后推荐茶以乌龙茶为主。",
+            "decision": "ignore",
+            "reason": "本轮主人只是询问以后推荐茶按什么偏好，属于对已有记忆的查询，没有提供新的稳定事实、偏好或纠错。现有 preference.tea 为 ACTIVE，值为“长期喝乌龙茶”，可直接据此回答，无需写入或修改任何记忆。",
+            "rule": "2 / 8",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [
+              "preference.tea"
+            ],
+            "changes": [],
+            "model_call": {
+              "request_id": "d782e361-601d-4868-9896-f330f9ef998e",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:26.902185+00:00",
+              "elapsed_seconds": 1.914,
+              "usage": {
+                "prompt_tokens": 5849,
+                "completion_tokens": 177,
+                "total_tokens": 6026,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 857
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "未改动记忆"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_v24-D04:preference.tea:1",
+                "owner_id": "LIMING",
+                "key": "preference.tea",
+                "label": "饮茶偏好",
+                "category": "PREFERENCE",
+                "value": "平时喜欢喝红茶",
+                "status": "SUPERSEDED",
+                "source_turn": 1,
+                "updated_turn": 2,
+                "evidence": "记住我平时喜欢喝红茶。",
+                "reason": "主人本人明确陈述的稳定偏好，按守则第2条保存为持续适用的偏好条目",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 1,
+                  "time_text": "平时",
+                  "end_condition": ""
+                }
+              },
+              {
+                "id": "eval-candidate_v24-D04:preference.tea:2",
+                "owner_id": "LIMING",
+                "key": "preference.tea",
+                "label": "饮茶偏好",
+                "category": "PREFERENCE",
+                "value": "长期喝乌龙茶",
+                "status": "ACTIVE",
+                "source_turn": 2,
+                "updated_turn": 2,
+                "evidence": "我长期喝的是乌龙茶，不是红茶",
+                "reason": "主人明确纠错并给出新的当前偏好值，替代原“喜欢喝红茶”，按第3条更新、第5条第5项纠错",
+                "validity": {
+                  "kind": "ongoing",
+                  "reference_turn": 2,
+                  "time_text": "长期",
+                  "end_condition": ""
+                }
+              }
+            ]
+          }
+        ],
+        "created_at": "2026-10-15T16:48:22.121005+00:00",
+        "engine": "llm-v2"
+      }
+    },
+    {
+      "id": "D12",
+      "planned_turns": 3,
+      "steps": [
+        {
+          "turn": 1,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "0d61960b-bbcd-4def-9b4b-3751587c0fb2",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:28.819089+00:00",
+              "elapsed_seconds": 2.77,
+              "usage": {
+                "prompt_tokens": 5279,
+                "completion_tokens": 420,
+                "total_tokens": 5699,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 287
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "d1bc8fdd-3242-4bbe-af87-4bef16f1397f",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:31.589674+00:00",
+              "elapsed_seconds": 2.327,
+              "usage": {
+                "prompt_tokens": 5679,
+                "completion_tokens": 324,
+                "total_tokens": 6003,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 687
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "status": "saved",
+          "calls": [
+            {
+              "request_id": "169cd01b-4521-40fc-afc9-565ea3ff44ba",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:33.916796+00:00",
+              "elapsed_seconds": 2.988,
+              "usage": {
+                "prompt_tokens": 5949,
+                "completion_tokens": 457,
+                "total_tokens": 6406,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 957
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            }
+          ]
+        }
+      ],
+      "workspace": {
+        "id": "eval-candidate_v24-D12",
+        "title": "D12",
+        "kind": "sandbox",
+        "owner_id": "LIMING",
+        "owner_name": "李明",
+        "records": [
+          {
+            "id": "eval-candidate_v24-D12:translation_draft_edit_task:1",
+            "owner_id": "LIMING",
+            "key": "translation_draft_edit_task",
+            "label": "翻译稿整理与发送任务",
+            "category": "GOAL",
+            "value": "这周先把翻译稿整理好，之后发给编辑；是需要跟进的任务。",
+            "status": "SUPERSEDED",
+            "source_turn": 1,
+            "updated_turn": 3,
+            "evidence": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+            "reason": "主人明确暂缓该跟进任务且后续未定，原任务保留但当前是否继续执行不确定，转REVIEW。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 1,
+              "time_text": "这周",
+              "end_condition": "发给编辑"
+            }
+          },
+          {
+            "id": "eval-candidate_v24-D12:translation_draft_edit_task:3",
+            "owner_id": "LIMING",
+            "key": "translation_draft_edit_task",
+            "label": "翻译稿整理与发送任务",
+            "category": "GOAL",
+            "value": "下周继续整理翻译稿，之后发给编辑；是需要跟进的任务。",
+            "status": "ACTIVE",
+            "source_turn": 3,
+            "updated_turn": 3,
+            "evidence": "不是取消，我下周会继续整理，先保留这件事。",
+            "reason": "主人明确不取消并说明下周继续整理，任务恢复为当前有效，时间更新为下周，结束条件仍为发给编辑。",
+            "validity": {
+              "kind": "temporary",
+              "reference_turn": 3,
+              "time_text": "下周",
+              "end_condition": "发给编辑"
+            }
+          }
+        ],
+        "turns": [
+          {
+            "turn": 1,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+            "response": "已记下：这周先把翻译稿整理好，之后发给编辑，作为需要跟进的任务。",
+            "decision": "change",
+            "reason": "主人明确交办一项需要后续执行的临时任务：本周整理翻译稿并之后发给编辑。该事项有明确跟进价值，应保存为临时事项，时间表达“这周”绑定本轮，结束条件为“发给编辑”。无其他稳定事实或旧条目需要处理。",
+            "rule": "2",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [],
+            "changes": [
+              {
+                "key": "translation_draft_edit_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "action": "新增",
+                "before": null,
+                "after": "这周先把翻译稿整理好，之后发给编辑；是需要跟进的任务。",
+                "status": "ACTIVE",
+                "reason": "主人明确交办且后续需要执行的临时任务，应保存至结束条件达成。",
+                "rule": "2",
+                "before_validity": null,
+                "after_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "0d61960b-bbcd-4def-9b4b-3751587c0fb2",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:28.819089+00:00",
+              "elapsed_seconds": 2.77,
+              "usage": {
+                "prompt_tokens": 5279,
+                "completion_tokens": 420,
+                "total_tokens": 5699,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 287
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "1项变化"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_v24-D12:translation_draft_edit_task:1",
+                "owner_id": "LIMING",
+                "key": "translation_draft_edit_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "value": "这周先把翻译稿整理好，之后发给编辑；是需要跟进的任务。",
+                "status": "ACTIVE",
+                "source_turn": 1,
+                "updated_turn": 1,
+                "evidence": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+                "reason": "主人明确交办且后续需要执行的临时任务，应保存至结束条件达成。",
+                "validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ]
+          },
+          {
+            "turn": 2,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "稿子先放一放，别急，我还没有想好后面怎么办。",
+            "response": "好的，翻译稿的事先放一放，我把这项任务标记为暂缓待定，等你之后想好了再继续。",
+            "decision": "change",
+            "reason": "主人表示翻译稿先放一放、尚未想好后续怎么办，属于对原跟进任务的暂缓而非明确取消，依守则第5条应保留原任务并转为REVIEW，不执行forget。",
+            "rule": "5",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [
+              "translation_draft_edit_task"
+            ],
+            "changes": [
+              {
+                "key": "translation_draft_edit_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "action": "待确认",
+                "before": "这周先把翻译稿整理好，之后发给编辑；是需要跟进的任务。",
+                "after": "这周先把翻译稿整理好，之后发给编辑；是需要跟进的任务。",
+                "status": "REVIEW",
+                "reason": "主人明确暂缓该跟进任务且后续未定，原任务保留但当前是否继续执行不确定，转REVIEW。",
+                "rule": "5",
+                "before_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                },
+                "after_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "d1bc8fdd-3242-4bbe-af87-4bef16f1397f",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:31.589674+00:00",
+              "elapsed_seconds": 2.327,
+              "usage": {
+                "prompt_tokens": 5679,
+                "completion_tokens": 324,
+                "total_tokens": 6003,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 687
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "1项变化"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_v24-D12:translation_draft_edit_task:1",
+                "owner_id": "LIMING",
+                "key": "translation_draft_edit_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "value": "这周先把翻译稿整理好，之后发给编辑；是需要跟进的任务。",
+                "status": "REVIEW",
+                "source_turn": 1,
+                "updated_turn": 2,
+                "evidence": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+                "reason": "主人明确暂缓该跟进任务且后续未定，原任务保留但当前是否继续执行不确定，转REVIEW。",
+                "validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ]
+          },
+          {
+            "turn": 3,
+            "role": "owner",
+            "speaker": "李明",
+            "input": "不是取消，我下周会继续整理，先保留这件事。",
+            "response": "好的，翻译稿整理这件事不取消，先保留；我记下你下周会继续整理，之后发给编辑。",
+            "decision": "change",
+            "reason": "主人明确表示不是取消，下周会继续整理，先保留这件事。这是对已有暂缓任务translation_draft_edit_task的恢复与时间更新：任务继续有效，时间从原来的“这周”改为“下周”，因此用upsert写回ACTIVE，reference_turn锚定本轮，time_text为“下周”，结束条件仍为“发给编辑”。",
+            "rule": "3 / 5",
+            "mode": "llm",
+            "warnings": [],
+            "used_keys": [
+              "translation_draft_edit_task"
+            ],
+            "changes": [
+              {
+                "key": "translation_draft_edit_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "action": "更新",
+                "before": "这周先把翻译稿整理好，之后发给编辑；是需要跟进的任务。",
+                "after": "下周继续整理翻译稿，之后发给编辑；是需要跟进的任务。",
+                "status": "ACTIVE",
+                "reason": "主人明确不取消并说明下周继续整理，任务恢复为当前有效，时间更新为下周，结束条件仍为发给编辑。",
+                "rule": "3 / 5",
+                "before_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                },
+                "after_validity": {
+                  "kind": "temporary",
+                  "reference_turn": 3,
+                  "time_text": "下周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ],
+            "model_call": {
+              "request_id": "169cd01b-4521-40fc-afc9-565ea3ff44ba",
+              "provider_url": "https://api.deepseek.com",
+              "model": "deepseek-flash",
+              "requested_model": "deepseek-flash",
+              "started_at": "2026-10-15T16:48:33.916796+00:00",
+              "elapsed_seconds": 2.988,
+              "usage": {
+                "prompt_tokens": 5949,
+                "completion_tokens": 457,
+                "total_tokens": 6406,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4992
+                },
+                "prompt_cache_hit_tokens": 4992,
+                "prompt_cache_miss_tokens": 957
+              },
+              "rules_sha256": "4e4ad56d80724dfa5720c47fac1f449449b1915622cc1c3c1e22ec09d88612b5",
+              "protocol_sha256": "dd8ed4b5c93c85ede36e9806f33b82b245656c7781f183163b93de3115d688f4",
+              "stage": "plan",
+              "request_count": 1,
+              "format_repairs": 0
+            },
+            "checks": [
+              {
+                "label": "输入来源",
+                "value": "主人本人"
+              },
+              {
+                "label": "决策者",
+                "value": "deepseek-flash"
+              },
+              {
+                "label": "实际操作",
+                "value": "1项变化"
+              }
+            ],
+            "snapshot": [
+              {
+                "id": "eval-candidate_v24-D12:translation_draft_edit_task:1",
+                "owner_id": "LIMING",
+                "key": "translation_draft_edit_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "value": "这周先把翻译稿整理好，之后发给编辑；是需要跟进的任务。",
+                "status": "SUPERSEDED",
+                "source_turn": 1,
+                "updated_turn": 3,
+                "evidence": "这周先把翻译稿整理好，之后发给编辑；这是我需要跟进的任务。",
+                "reason": "主人明确暂缓该跟进任务且后续未定，原任务保留但当前是否继续执行不确定，转REVIEW。",
+                "validity": {
+                  "kind": "temporary",
+                  "reference_turn": 1,
+                  "time_text": "这周",
+                  "end_condition": "发给编辑"
+                }
+              },
+              {
+                "id": "eval-candidate_v24-D12:translation_draft_edit_task:3",
+                "owner_id": "LIMING",
+                "key": "translation_draft_edit_task",
+                "label": "翻译稿整理与发送任务",
+                "category": "GOAL",
+                "value": "下周继续整理翻译稿，之后发给编辑；是需要跟进的任务。",
+                "status": "ACTIVE",
+                "source_turn": 3,
+                "updated_turn": 3,
+                "evidence": "不是取消，我下周会继续整理，先保留这件事。",
+                "reason": "主人明确不取消并说明下周继续整理，任务恢复为当前有效，时间更新为下周，结束条件仍为发给编辑。",
+                "validity": {
+                  "kind": "temporary",
+                  "reference_turn": 3,
+                  "time_text": "下周",
+                  "end_condition": "发给编辑"
+                }
+              }
+            ]
+          }
+        ],
+        "created_at": "2026-10-15T16:48:28.818950+00:00",
+        "engine": "llm-v2"
+      }
+    }
+  ],
+  "api_attempts_recorded": 10,
+  "finished_at": "2026-10-15T16:48:36.907632+00:00",
+  "saved_turns": 9,
+  "failed_turns": 0,
+  "blocked_turns": 0,
+  "provider_request_ids": 10,
+  "known_usage": {
+    "prompt_tokens": 56940,
+    "completion_tokens": 3763,
+    "total_tokens": 60703
+  },
+  "usage_missing_calls": 0
+}

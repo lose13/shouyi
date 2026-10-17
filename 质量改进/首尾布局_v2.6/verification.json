@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "completed_28": true,
+    "api_requests_and_unique_ids_28": true,
+    "no_format_repairs": true,
+    "all_requests_record_three_message_roles": true,
+    "all_layout_labels_match": true,
+    "rules_match": true,
+    "protocol_matches": true,
+    "all_call_versions_match": true,
+    "source_matches_frozen_manifest": true,
+    "storage_engine_unchanged_from_v25": true,
+    "export_matches_executed_state": true,
+    "archived_export_matches": true,
+    "nonowner_did_not_write": true,
+    "no_full_identifiers_in_workspace": true,
+    "no_api_key_in_run": true,
+    "v25_baseline_preserved": true
+  },
+  "run_id": "9912e312fb8a4382981f0cf9ccbfb194",
+  "rules_characters": 6977,
+  "protocol_characters": 2313,
+  "usage": {
+    "prompt_tokens": 282308,
+    "completion_tokens": 10078,
+    "total_tokens": 292386
+  }
+}
